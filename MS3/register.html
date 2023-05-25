@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+
+<head>
+   <meta charset="utf-8">
+   <title> Crédit Égide Registeration</title>
+   <link rel="stylesheet" href="resources1/css/reg.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+
+</head>
+
+<body>
+   <img class='logo' src='resources1/images/mylogo.png' alt='Official logo'>
+   <div class="container">
+      <header>Signup</header>
+      <div class="progress-bar">
+         <div class="step">
+            <p>
+               Info
+            </p>
+            <div class="bullet">
+               <span>1</span>
+            </div>
+            <div class="check fas fa-check"></div>
+         </div>
+         <div class="step">
+            <p>
+               Identity
+            </p>
+            <div class="bullet">
+               <span>2</span>
+            </div>
+            <div class="check fas fa-check"></div>
+         </div>
+         <div class="step">
+            <p>
+               Credentials
+            </p>
+            <div class="bullet">
+               <span>3</span>
+            </div>
+            <div class="check fas fa-check"></div>
+         </div>
+         <div class="step">
+            <p>
+               Submit
+            </p>
+            <div class="bullet">
+               <span>4</span>
+            </div>
+            <div class="check fas fa-check"></div>
+         </div>
+      </div>
+      <div class="form-outer">
+         <form action="#">
+            <div class="page slide-page">
+               <div class="title">
+                  Basic Info:
+               </div>
+               <div class="field">
+                  <div class="label">
+                     Full Name
+                  </div>
+                  <input type="text">
+               </div>
+               <div class="field">
+                  <div class="label">
+                     Account Number
+                  </div>
+                  <input type="text">
+               </div>
+               <div class="field">
+                  <button class="firstNext next">Next</button>
+               </div>
+            </div>
+            <div class="page">
+               <div class="title">
+                  Identity Verification:
+               </div>
+               <div class="field">
+                  <div class="label">
+                     Phone Banking Number
+                  </div>
+                  <input type="text">
+               </div>
+               <div class="field">
+                  <div class="label">
+                     Pin
+                  </div>
+                  <input type="text">
+               </div>
+
+               <div class="field btns">
+                  <button class="prev-1 prev">Previous</button>
+                  <button class="next-1 next">Next</button>
+               </div>
+            </div>
+            <div class="page">
+               <div class="title">
+                  Login Details:
+               </div>
+               <div class="field">
+                  <div class="label">
+                     Username
+                  </div>
+                  <input type="text">
+               </div>
+               <div class="field">
+                  <div class="label">
+                     Password
+                  </div>
+                  <input type="password">
+               </div>
+               <div class="field btns">
+                  <button class="prev-2 prev">Previous</button>
+                  <button class="next-2 next">Next</button>
+               </div>
+            </div>
+            <div class="page">
+               <div class="title">
+                  Security Question:
+               </div>
+               <div class="field">
+                  <div class="label">
+                     Question
+                  </div>
+                  <input type="text">
+               </div>
+               <div class="field">
+                  <div class="label">
+                     Answer
+                  </div>
+                  <input type="text">
+               </div>
+               <!-- oninvalid="this.setCustomValidity('You need to agree to terms and conditions')" -->
+               <input type="checkbox" id="check" required>
+               <a id="read" onclick="termConditions();return false;">Read Terms And Conditions</a>
+               <div class="field btns">
+                  <button class="prev-3 prev">Previous</button>
+                  <button class="submit">Submit</button>
+               </div>
+            </div>
+         </form>
+      </div>
+   </div>
+   <div class="popup">
+      <button id="close">&times;</button>
+      <h2>Please Read Thoroughly</h2>
+      <div id="terms">
+         <p>
+         <h3>Terms and Conditions:</h3>
+         1. Account Information: When you sign up for online banking, you will need to provide certain information
+         about yourself and your accounts. This information will be used to verify your identity and authorize
+         transactions.
+         <br>
+         2. Security: We take the security of your online banking account seriously and use various security measures
+         to protect your information, including encryption and firewalls. We also recommend that you take steps to
+         protect your account, such as using strong passwords and not sharing your login information.
+         <br>
+         3. Transactions: You can use online banking to view your account balances, transfer funds between accounts,
+         pay bills, and make other transactions. Some transactions may be subject to fees or restrictions, and we may
+         require additional verification for certain transactions.
+         <br>
+         4. Mobile Banking: You may also be able to access your account through a mobile app or mobile website.
+         Mobile banking is subject to the same terms and conditions as online banking.
+         <br>
+         5. Alerts: You can sign up to receive alerts for certain account activities, such as when a transaction is
+         made or your balance falls below a certain amount.
+         <br>
+         6. Service Fees: We may charge fees for certain services, such as wire transfers or overdraft protection.
+         These fees will be disclosed to you before you complete the transaction.
+         <br>
+         7. Termination: You can terminate your online banking account at any time by contacting customer service. We
+         may also terminate your account if you violate our terms and conditions or engage in fraudulent activity.
+         <br>
+         8. Disclaimer of Liability: We are not responsible for any losses or damages resulting from the use of
+         online banking, including unauthorized access to your account. You are responsible for monitoring your
+         account activity and promptly reporting any unauthorized transactions.
+         <br>
+         9. Changes to Terms and Conditions: We reserve the right to change these terms and conditions at any time.
+         We will notify you of any changes and you will be bound by the revised terms and conditions if you continue
+         to use online banking.
+         <br>
+         10. Governing Law: These terms and conditions are governed by the laws of the state where the bank is
+         located. Any disputes arising from the use of online banking will be resolved through arbitration in
+         accordance with the rules of the American Arbitration Association.
+         </p>
+      </div>
+      <a id="agree" href="#">Agree</a>
+   </div>
+   <script src="resources1/js/reg.js"></script>
+</body>
+
+</html>
