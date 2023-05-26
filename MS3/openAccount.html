@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <title>Crédit Égide Open Account</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="resources1/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="resources1/css/fontawesome.css">
+  <link rel="stylesheet" href="resources1/css/templatemo-woox-travel.css">
+  <link rel="stylesheet" href="resources1/css/owl.css">
+  <link rel="stylesheet" href="resources1/css/animate.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!--
+
+TemplateMo 580 Woox Travel
+
+https://templatemo.com/tm-580-woox-travel
+
+-->
+</head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="padding: 0px 0px 0px 0px;">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a onclick="history.back()" class="logo">
+              <img src="resources1/images/logo2.png" alt="" style="width: fit-content; height: fit-content;">
+              <img src="resources1/images/name2.png" alt="" style="width: fit-content;  width: 150px; height: fit-content;">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li><a onclick="history.back()" id="ignorePadding">
+                  <i class="fa fa-home" id=profile></i></a>
+              </li>
+              <!-- <li><a href="index.html" id="ignorePadding">
+                  <i class="fa fa-bell" id=profile></i></a></li> -->
+              <!-- <li><a href="index.html" id="ignorePadding">
+                  <i class="fa fa-user" id=profile></i></a>
+              </li> -->
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+
+  <div class="second-page-heading">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h4>La sécurité financière commence avec Égide Banque</h4>
+          <h2>Open Your New Account &#8681</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="reservation-form">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <form id="reservation-form" name="gs" method="submit" role="search" action="/action_page.php">
+            <div class="row">
+              <div class="col-lg-12">
+                <h4 style="color:#5885AF ;">Open Your <em>Bank Account</em> Through This <em>Form</em></h4>
+              </div>
+              <div class="col-lg-12">
+                <h5 style="color:#5885AF; font-size:large;">You need to download the form below fill it ,add a copy of
+                  your personal identification (National Id or Passport) and upload before submitting this form</h5><br>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <label for="Number" class="form-label">Application PDF</label>
+                  <button onclick="location.href='resources1/newAccount.pdf'" type="button"
+                    class="main-button">Download Account Application Form</button>
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <label for="Name" class="form-label">Full Name</label>
+                  <input type="text" name="Name" class="Name" placeholder="Ex. John Smithee" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <label for="Name" class="form-label">Pin</label>
+                  <input type="password" name="Name" class="Name" placeholder="Ex.18664" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <label for="Name" class="form-label">Re-enter Pin</label>
+                  <input type="password" name="Name" class="Name"  autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <label for="Number" class="form-label">Your Phone Number</label>
+                  <input type="text" name="Number" class="Number" placeholder="Ex. +xxx xxx xxx" autocomplete="on"
+                    required>
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <label for="chooseGuests" class="form-label">Account Type</label>
+                  <select name="Guests" class="form-select" aria-label="Default select example" id="chooseGuests"
+                    onChange="this.form.click()">
+                    <option type="checkbox" name="option1" value="1">Savings</option>
+                    <option value="2">Running</option>
+                  </select>
+                </fieldset>
+              </div>
+              <div class=" col-lg-2">
+                <fieldset>
+                  <label for="myfile" class="form-label">Upload Filled Form</label>
+                  <input style="border: 0;" type="file" id="myfile" name="filename">
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <button type="button" onclick="check()" class="main-button">Submit Form</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="more-info reservation-info call-to-action" id="contactUs">
+    <div class="container">
+      <div class="row">
+        <h2>Contact US</h2>
+        <div class="col-lg-4 col-sm-6">
+          <div class="info-item">
+            <i class="fa fa-phone"></i>
+            <h5 style="color: #274472;">Make a Phone Call</h5>
+            <h7 style="color: #274472;">+123 456 789 </h7>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="info-item">
+            <i class="fa fa-envelope"></i>
+            <h5 style="color: #274472;">Contact Us via Email</h5>
+            <h7 style="color: #274472;">creditegide@email.com</h7>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="info-item">
+            <i class="fa fa-map-marker"></i>
+            <h5 style="color: #274472;">Visit Our Branches</h5>
+            <a href="#location">24th Street North Avenue Cairo, Egypt</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2023 <a href="index.html">Crédit Égide</a> Bank. All rights reserved.
+          </P>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="resources1/vendor/jquery/jquery.min.js"></script>
+  <script src="resources1/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="resources1/js/isotope.min.js"></script>
+  <script src="resources1/js/owl-carousel.js"></script>
+  <script src="resources1/js/wow.js"></script>
+  <script src="resources1/js/tabs.js"></script>
+  <script src="resources1/js/popup.js"></script>
+  <script src="resources1/js/custom.js"></script>
+
+  <script>
+    $(".option").click(function () {
+      $(".option").removeClass("active");
+      $(this).addClass("active");
+    });
+    function check() {
+
+      var allitems = true;
+      document.getElementById("reservation-form").querySelectorAll("[required]").forEach(item => {
+        if (!item.value) {
+          allitems = false;
+          return;
+        }
+      });
+      if (allitems && !alert("Form Submitted SuccessfullyPage will reload")) { window.location.reload(); }
+      else
+        alert("fill all the fields");
+    }
+  </script>
+
+</body>
+
+</html>
