@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <title>Creadit Cards</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="CreditCard&Loans/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="CreditCard&Loans/assets/css/fontawesome.css">
+  <link rel="stylesheet" href="CreditCard&Loans/assets/css/loans.css">
+  <link rel="stylesheet" href="CreditCard&Loans/assets/css/owl.css">
+  <link rel="stylesheet" href="CreditCard&Loans/assets/css/animate.css">
+  <link rel="stylesheet" href="CreditCard&Loans/assets/css/style.css">
+  <link rel="stylesheet" href="CreditCard&Loans\assets\css\viewCredit.css">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+</head>
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+     <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="padding: 0px 0px 0px 0px;">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img src="CreditCard&Loans/assets/images/logo2.png" alt="" style="width: fit-content; height: fit-content;">
+              <img src="CreditCard&Loans/assets/images/name2.png" alt="" style="width: fit-content;  width: 150px; height: fit-content;">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+
+              <li><a href="loggedHome.html" class="active">Home</a></li>
+              <li><a href="#announcements">Announcements</a></li>
+              <li><a href="index.html" id="ignoreCSS">
+                <i class="fa fa-envelope" id=profile></i></a></li>
+              <li>
+                <a href="index.html" id="ignoreCSS">
+                  <i class="fa fa-user" id=profile></i></a>
+              </li>
+              <li>
+                <div class="main-button">
+                  <a href="index.html" style="background-color: #eae6e6; color: #000000; 
+                text-align: center; padding: 10px 20px;">Log Out &#8680</a>
+                </div>
+              </li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+        </nav>
+    </div>
+  </div>
+</div>
+</header>
+
+
+<section class="section-padding">
+    <div class="container">
+        <div class="row">
+
+            <!-- <div class="col-lg-12 col-12 text-center">
+                <h3 class="mb-4">My Credit Cards</h3>
+            </div> -->
+
+            <div class="col-lg-8 col-12 mt-3 mx-auto">
+                <div class="custom-block custom-block-topics-listing bg-white shadow-lg mb-5">
+                    <div class="d-flex">
+                        <div class="custom-block-topics-listing-info d-flex">
+                            <div>
+                                <h2 class="mb-2">Points </h2>
+                                <h1 class="mb-3" id="points">1240 </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="pointRedeemed">
+            </div>
+        </div>
+    </div>
+</section>            
+
+<div class="weekly-offers" id="deals">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading text-center">
+            <h2>Redeem your Points</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-weekly-offers owl-carousel">
+            <div class="item">
+              <div class="thumb">
+                <div class="text">
+                  <h4>B.TECH</h4><br><br>
+                    <img class="points-img" src="CreditCard&Loans/assets/images/B.TECH.jpg" alt="">
+                  <h7>Get 500EGP from B.TECH with 1000 points</h7>
+                  <div class="main-button" id="main-button-deal1" onclick= "clickDeal()">
+                    <a>GetDeal</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <div class="text">
+                    <h4>Carrefour</h4><br><br>
+                    <img src="CreditCard&Loans/assets/images/Carrefour.png" alt="">
+                    <h7>Get 500EGP from Carrefour with 1000 points</h7>
+                    <div class="main-button" id="main-button-deal2" onclick= "clickDeal()">
+                        <a>GetDeal</a>
+                      </div>
+                    </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <div class="text">
+                    <h4>Gold's Gym</h4><br><br>
+                    <img src="CreditCard&Loans/assets/images/goldsGym.jpg" alt="">
+                    <h7>Get One month membership with 1000 points</h7>
+                    <div class="main-button" id="main-button-deal3" onclick= "clickDeal()">
+                        <a>GetDeal</a>
+                      </div>
+                    </div>
+
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <div class="text">
+                    <h4>Mori Sushi</h4><br><br>
+                    <img src="CreditCard&Loans/assets/images/mori-sushi.jpg" alt="">
+                    <h7>Get 500EGP from Mori Sushi with 1000 points</h7>
+                    <div class="main-button" id="main-button-deal4" onclick= "clickDeal()">
+                        <a>GetDeal</a>
+                    </div>
+
+                  </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <div class="text">
+                    <h4>El Araby</h4><br><br>
+                    <img src="CreditCard&Loans/assets/images/elaraby.jpg" alt=""><br>
+                    <h7>Get 500EGP from El Araby with 1000 points</h7><br>
+                    <div class="main-button" id="main-button-deal5" onclick= "clickDeal()">
+                        <a>GetDeal</a>
+                    </div>
+
+                  </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <div class="text">
+                    <h4>American-Eagle</h4><br><br>
+                    <img src="CreditCard&Loans/assets/images/americaneagle.png" alt="">
+                    <h7>Get 500EGP from American-Eagle with 1000 points</h7>
+                    <div class="main-button" id="main-button-deal6" onclick= "clickDeal()">
+                        <a>GetDeal</a>
+                    </div>
+              </div>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+   
+
+  
+
+
+
+
+
+
+<div class="call-to-action" id="openAccount">
+    <div class="container">
+      <div class="row">
+       
+
+          
+        </div>
+      </div>
+    </div>
+
+  <div class="more-info reservation-info call-to-action" id="contactUs">
+    <div class="container">
+      <div class="row">
+        <h2>Contact US</h2>
+        <div class="col-lg-4 col-sm-6">
+          <div class="info-item">
+            <i class="fa fa-phone"></i>
+            <h5 style="color: #274472;">Make a Phone Call</h5>
+            <h7 style="color: #274472;">+123 456 789 </h7>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="info-item">
+            <i class="fa fa-envelope"></i>
+            <h5 style="color: #274472;">Contact Us via Email</h5>
+            <h7 style="color: #274472;">creditegide@email.com</h7>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="info-item">
+            <i class="fa fa-map-marker"></i>
+            <h5 style="color: #274472;">Visit Our Branches</h5>
+            <a href="#location">24th Street North Avenue Cairo, Egypt</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2023 <a href="#">Crédit Égide</a> Bank. All rights reserved. <br>
+            <a href="#contactUs">Contact US</a>
+          </P>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script src="CreditCard&Loans/vendor/jquery/jquery.min.js"></script>
+<script src="CreditCard&Loans/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="CreditCard&Loans/assets/js/isotope.min.js"></script> 
+<script src="CreditCard&Loans/assets/js/owl-carousel.js"></script>
+<script src="CreditCard&Loans/assets/js/wow.js"></script>
+<script src="CreditCard&Loans/assets/js/tabs.js"></script>
+<script src="CreditCard&Loans/assets/js/popup.js"></script>
+
+<script src="CreditCard&Loans/assets/js/custom.js"></script>
+<script>
+    
+
+    function clickDeal() {
+        console.log("here");
+        document.getElementById("points").innerHTML = "240";
+        // document.querySelector("#main-button-deal").style.color="white";
+        document.getElementById("deals").remove();
+        const para = document.createElement("p");
+        var text = document.createTextNode("You will receive a message with a promocode that you can use in the shop you chose");
+
+        para.appendChild(text);
+
+        const element = document.getElementById("pointRedeemed");
+        element.appendChild(para);
+        document.getElementById("pointRedeemed").style.position = "relative";
+    document.getElementById("pointRedeemed").style.left = "20%";
+        // document.getElementById("main-button-deal2").remove();
+        // document.getElementById("main-button-deal3").remove();
+        // document.getElementById("main-button-deal4").remove();
+        // document.getElementById("main-button-deal5").remove();
+        // document.getElementById("main-button-deal6").remove();
+
+    }
+
+  
+
+  </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
