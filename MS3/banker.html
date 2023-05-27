@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <title>Home</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="banker/css/templatemo-woox-travel.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+
+</head>
+
+<body>
+
+  
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="padding: 0px 0px 0px 0px;">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="#section-1" class="logo">
+              <img src="assets/images/logo2.png" alt="" style="width: fit-content; height: fit-content;">
+              <img src="assets/images/name2.png" alt="" style="width: fit-content;  width: 150px; height: fit-content;">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li><a href="banker.html" class="active">Home</a></li>
+              <li><a href="ViewLoanREQ.html">View Loan Requests</a></li>
+              <li><a href="ViewCreditCardREQ.html">View Credit Card Requests</a></li>
+              <li><a href="ViewAccountREQ.html">View Account Requests</a></li>
+              <li>
+               
+              </li>
+              <li>
+                
+              </li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+   <!-- ***** Main Banner Area Start ***** -->
+   <section id="section-1">
+    <div class="content-slider">
+      <input type="radio" id="banner1" class="sec-1-input" name="banner" checked>
+      <input type="radio" id="banner2" class="sec-1-input" name="banner">
+      <input type="radio" id="banner3" class="sec-1-input" name="banner">
+      <input type="radio" id="banner4" class="sec-1-input" name="banner">
+      <div class="slider">
+        <div id="top-banner-1" class="banner">
+          <div class="banner-inner-wrapper header-text">
+            <div class="main-caption">
+              
+              <h1>France</h1>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                 
+                    <div class="row">
+                    
+                    </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="top-banner-2" class="banner">
+          <div class="banner-inner-wrapper header-text">
+            <div class="main-caption">
+              <h1>Egypt</h1>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                 
+                    <div class="row">
+                    
+                    </div>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="top-banner-3" class="banner">
+          <div class="banner-inner-wrapper header-text">
+            <div class="main-caption">
+              <h1>Switzerland</h1>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  
+                    <div class="row">
+                      
+                    </div>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="top-banner-4" class="banner">
+          <div class="banner-inner-wrapper header-text">
+            <div class="main-caption">
+
+              <h1>USA</h1>
+
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                 
+                    <div class="row">
+                     
+                    </div>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="controls">
+          <label for="banner1"><span class="progressbar"><span class="progressbar-fill"></span></span><span
+              class="text"></span></label>
+          <label for="banner2"><span class="progressbar"><span class="progressbar-fill"></span></span><span
+              class="text"></span></label>
+          <label for="banner3"><span class="progressbar"><span class="progressbar-fill"></span></span><span
+              class="text"></span></label>
+          <label for="banner4"><span class="progressbar"><span class="progressbar-fill"></span></span><span
+              class="text"></span></label>
+        </div>
+      </nav>
+    </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+
+  <script src="resources1/vendor/jquery/jquery.min.js"></script>
+  <script src="resources1/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="resources1/js/isotope.min.js"></script>
+  <script src="resources1/js/owl-carousel.js"></script>
+  <script src="resources1/js/wow.js"></script>
+  <script src="resources1/js/tabs.js"></script>
+  <script src="resources1/js/popup.js"></script>
+  <script src="resources1/js/custom.js"></script>
+
+  
+  <script>
+    function bannerSwitcher() {
+      next = $('.sec-1-input').filter(':checked').next('.sec-1-input');
+      if (next.length) next.prop('checked', true);
+      else $('.sec-1-input').first().prop('checked', true);
+    }
+
+    var bannerTimer = setInterval(bannerSwitcher, 5000);
+
+    $('nav .controls label').click(function () {
+      clearInterval(bannerTimer);
+      bannerTimer = setInterval(bannerSwitcher, 5000)
+    });
+  </script>
+
+</body>
+
+</html>
