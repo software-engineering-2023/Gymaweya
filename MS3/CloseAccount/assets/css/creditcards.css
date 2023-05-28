@@ -170,7 +170,6 @@ body {
   color: #fff;
 }
 
-
 .main-button a {
   font-size: 14px;
   color: #fff;
@@ -232,10 +231,10 @@ section {
   margin-top: 0px;
   margin-bottom: 20px;
   line-height: 36px;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 700;
   text-transform: capitalize;
-  color: #274472;
+  color: #e1d6d6;
 }
 
 /* 
@@ -403,9 +402,7 @@ Header Style
 .background-header .main-nav .logo img {
   padding-left: 5px;
 } */
-.points-img{
-  size: 10%;
-}
+
 .header-area .main-nav .nav {
   flex-basis: 70%;
   display: flex;
@@ -776,7 +773,7 @@ Banner Style
 #section-1 .more-info {
   margin-top: 100px;
   /* background-color: rgba(255,255,255 ,0.6); */
-  padding: 15px 15px 15px 15px;
+  padding: 10px 10px 10px 10px;
   border-radius: 61px;
   position: absolute;
   min-inline-size: 25%;
@@ -832,7 +829,7 @@ Banner Style
   margin-top: 8px;
   text-align: right;
 }
-#section-1 .viewLoan{
+#section-1 .viewCredit{
     /* background-color: rgba(145, 30, 30, 0.6); */
   position: absolute;
   width: 30%;
@@ -850,13 +847,11 @@ Banner Style
   box-sizing: border-box;
 }
 #section-1 .content-slider .slider .banner .banner-inner-wrapper .main-caption {
- background-color: rgba(255,255,255 ,0.6);
- padding: 20px 20px 20px 20px;
+ /* background-color: rgba(255,255,255 ,0.6); */
   position: absolute;
-  height:120%;
   width: 30%;
-  left: 10%;
-  top: 40%;
+  left: 60%;
+  top: 50%;
   transform: translateY(-50%);
 }
 #section-1 .content-slider .slider .banner .banner-inner-wrapper h2 {
@@ -878,19 +873,20 @@ Banner Style
   transition: 0.3s;
 }
 #section-1 .content-slider .slider #top-banner-1 {
-  background: url('../images/personal\ loan.jpg') no-repeat center center;
+  background: url('../images/test-creditcard.jpg') no-repeat center center;
   background-size: cover;
 }
 #section-1 .content-slider .slider #top-banner-2 {
-  background: url('../images/car\ loan.jpg') no-repeat center center;
+  background: url('../images/titanium-creditcard.jpg') no-repeat center center;
   background-size: cover;
 }
-.space{
-  
-        height: 300px;
-        width: 100%;
-    
-      
+#section-1 .content-slider .slider #top-banner-3 {
+  background: url('../images/gold-creditcard.jpg') no-repeat center center;
+  background-size: cover;
+}
+#section-1 .content-slider .slider #top-banner-4 {
+  background: url('../images/world-creditcard.jpg') no-repeat center center;
+  background-size: cover;
 }
 
 #section-1 .content-slider nav {
@@ -951,22 +947,30 @@ Banner Style
   color: #274472;
 }
 #section-1 .content-slider #banner1:checked ~ .slider #top-banner-1,
-#section-1 .content-slider #banner2:checked ~ .slider #top-banner-2{
+#section-1 .content-slider #banner2:checked ~ .slider #top-banner-2,
+#section-1 .content-slider #banner3:checked ~ .slider #top-banner-3,
+#section-1 .content-slider #banner4:checked ~ .slider #top-banner-4 {
   opacity: 1;
   z-index: 1;
 }
 #section-1 .content-slider #banner1:checked ~ nav label:nth-of-type(1),
-#section-1 .content-slider #banner2:checked ~ nav label:nth-of-type(2) {
+#section-1 .content-slider #banner2:checked ~ nav label:nth-of-type(2),
+#section-1 .content-slider #banner3:checked ~ nav label:nth-of-type(3),
+#section-1 .content-slider #banner4:checked ~ nav label:nth-of-type(4) {
   cursor: default;
   color: #fff;
   transition: all 0.5s;
 }
 #section-1 .content-slider #banner1:checked ~ nav label:nth-of-type(1) .progressbar,
-#section-1 .content-slider #banner2:checked ~ nav label:nth-of-type(2) .progressbar{
+#section-1 .content-slider #banner2:checked ~ nav label:nth-of-type(2) .progressbar,
+#section-1 .content-slider #banner3:checked ~ nav label:nth-of-type(3) .progressbar,
+#section-1 .content-slider #banner4:checked ~ nav label:nth-of-type(4) .progressbar {
   background: #fff;
 }
 #section-1 .content-slider #banner1:checked ~ nav label:nth-of-type(1) .progressbar-fill,
-#section-1 .content-slider #banner2:checked ~ nav label:nth-of-type(2) .progressbar-fill{
+#section-1 .content-slider #banner2:checked ~ nav label:nth-of-type(2) .progressbar-fill,
+#section-1 .content-slider #banner3:checked ~ nav label:nth-of-type(3) .progressbar-fill,
+#section-1 .content-slider #banner4:checked ~ nav label:nth-of-type(4) .progressbar-fill {
   animation: progressBarFill 5s linear;
 }
 /* Animations */
@@ -1304,7 +1308,7 @@ About Page Style
 
 .cities-town .owl-nav {
   position: absolute;
-  top: -90px;
+  top: -60px;
   right: 0;
 }
 
@@ -1345,8 +1349,7 @@ About Page Style
 }
 
 .weekly-offers .container-fluid {
-  padding: 30px 30px;
-  
+  padding: 0px 80px;
 }
 
 .weekly-offers .item {
@@ -1356,16 +1359,16 @@ About Page Style
 }
 
 .weekly-offers .item .thumb img {
-  /* padding-right: 160px; */
+  padding-right: 160px;
   border-radius: 23px;
 }
 
 .weekly-offers .item .thumb .text {
   position: absolute;
   background-color: #fff;
-  border-radius: 30px;
+  border-radius: 23px;
   right: 0;
-  top: 65%;
+  top: 50%;
   transform: translateY(-50%);
   box-shadow: 0px 0px 15px rgba(0,0,0,0.15);
   padding: 30px;
@@ -1418,17 +1421,7 @@ About Page Style
   color: #fff;
   opacity: 0.85;
 }
-.weekly-offers .item .thumb .text .main-button a {
-  background-color: #274472;
-  border-color: #274472;
-  color: #ffffff;
-}
-.main-button-deal-disabbled{
-  background-color: #722727;
-  border-color: #274472;
-  color: #ffffff;
-  opacity:0.8;
-}
+
 .weekly-offers .owl-nav {
   text-align: center;
   margin-top: 30px;
@@ -2244,6 +2237,12 @@ Reservation Page Style
 
 .reservation-form #reservation-form button:hover {
   opacity: 0.8;
+}
+.close-account {
+  /* Background pattern from Toptal Subtle Patterns */
+  background-image: url("../images/photoo.jpeg");
+  height: 550px;
+
 }
 
 
