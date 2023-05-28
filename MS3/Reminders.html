@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <title>Reminders</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="banker/css/templatemo-woox-travel.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+ <!--<div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div> -->
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="padding: 0px 0px 0px 0px;">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="#section-1" class="logo">
+              <img src="assets/images/logo2.png" alt="" style="width: fit-content; height: fit-content;">
+              <img src="assets/images/name2.png" alt="" style="width: fit-content;  width: 150px; height: fit-content;">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              
+
+              <li>
+               
+              </li>
+              <li>
+                
+              </li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+		
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="banker/css/style.css">
+
+	
+	
+	
+
+
+
+	<body>
+		
+		
+		<h2 class="heading-section">Reminders</h2>
+	
+		
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<style>
+						body {
+							background: url('banker/resources1/images/banner-01.jpg') no-repeat center center;
+  background-size: cover;
+						}
+					  </style>
+					
+					
+					
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="table-wrap">
+						<table class="table table-responsive-xl">
+						  <thead>
+						    <tr>
+						    	<td><strong>Credit Card Request Status</strong></td>
+								<td></td>
+								<td><strong>Request ID </strong></td>
+						    	<td><strong>Name</strong></td>
+						      <td><strong>Email</strong></td>
+						      <td><strong>Phome number</strong></td>
+							  <th></th>
+							  <td><strong>Address</strong></td>
+							  <td><strong>Credit Card type</strong></td>
+							  <th></th>
+							  <td><strong>Credit Card Rank</strong></td>
+							  <th></th>
+							  <td><strong>Annual income</strong></td>
+                <td><strong>National ID</strong></td>
+							  <th></th>
+							  
+							 
+
+						      
+						    </tr>
+						  </thead>
+						  <tbody>
+						   
+							
+								<tr class="alert" role="alert">
+									<td class="status"><span class="waiting"id="myTd">pending</span></td>
+									<td><button id="myButton">approve</button>
+									<button id="myButton2">decline</button></td>
+
+									<script>
+										// Get the button element by its ID
+										var button = document.getElementById("myButton");
+										var textElement = document.getElementById("myTd");
+										// Add a click event handler
+										button.addEventListener("click", function() {
+										  // Define the desired behavior
+										  
+										  textElement.textContent="approved";
+										  textElement.classList.remove("waiting");
+										  textElement.classList.remove("DEC");
+                                          textElement.classList.add("active");
+										  // You can perform additional actions here
+										});
+									  </script>
+
+									  <script>
+										// Get the button element by its ID
+										var button = document.getElementById("myButton2");
+										var textElement = document.getElementById("myTd");
+										// Add a click event handler
+										button.addEventListener("click", function() {
+										  // Define the desired behavior
+										  
+										  textElement.textContent="declined";
+										  textElement.classList.remove("waiting");
+										  textElement.classList.remove("active");
+                                          textElement.classList.add("DEC");
+										  // You can perform additional actions here
+										});
+									  </script>
+
+
+									<td>499978</td>
+									<td>Mark Otto</th>
+								  <td>markotto@email.com</td>
+								  <td>0112188765</td>
+								  <th></th>
+								  <td> New Cairo</td>
+								  <td>VISA</td>
+								  <th></th>
+								  <td>GOLD</td>
+								  <td></th>
+								  <td>3000 EGP</td>
+                  <td>1234567</td>
+								  <th></th>
+								 
+							
+								</tr>
+								<tr class="alert" role="alert">
+									<td class="status"><span class="waiting"id="myTd1">pending</span></td>
+									<td><button id="myButton3">approve</button>
+										<button id="myButton4">decline</button></td>
+	
+										<script>
+											// Get the button element by its ID
+											var button1 = document.getElementById("myButton3");
+											var textElement1 = document.getElementById("myTd1");
+											// Add a click event handler
+											button1.addEventListener("click", function() {
+											  // Define the desired behavior
+											  
+											  textElement1.textContent="approved";
+											  textElement1.classList.remove("waiting");
+											  textElement1.classList.remove("DEC");
+											  textElement1.classList.add("active");
+											  // You can perform additional actions here
+											});
+										  </script>
+	
+										  <script>
+											// Get the button element by its ID
+											var button1 = document.getElementById("myButton4");
+											var textElement1 = document.getElementById("myTd1");
+											// Add a click event handler
+											button1.addEventListener("click", function() {
+											  // Define the desired behavior
+											  
+											  textElement1.textContent="declined";
+											  textElement1.classList.remove("waiting");
+											  textElement1.classList.remove("active");
+											  textElement1.classList.add("DEC");
+											  // You can perform additional actions here
+											});
+										  </script>
+	
+
+
+
+
+									<td>499979</td>
+									<td>Gary Bird</th>
+								  <td>GaryBary@email.com</td>
+								  <td>011218888</td>
+								  <th></th>
+								  <td> sheikh zayed</td>
+								  <td>MASTER CARD </td>
+								  <th></th>
+								  <td>PLATINUM</td>
+								  <td></th>
+								  <td>2000 EGP</td>
+                  <td>7653241</td>
+
+								  <th></th>
+								 
+							
+								</tr>
+
+								<tr class="alert" role="alert">
+									<td class="status"><span class="waiting"id="myTd2">pending</span></td>									
+									<td><button id="myButton5">approve</button>
+										<button id="myButton6">decline</button></td>
+	
+										<script>
+											// Get the button element by its ID
+											var button2 = document.getElementById("myButton5");
+											var textElement2 = document.getElementById("myTd2");
+											// Add a click event handler
+											button2.addEventListener("click", function() {
+											  // Define the desired behavior
+											  
+											  textElement2.textContent="approved";
+											  textElement2.classList.remove("waiting");
+											  textElement2.classList.remove("DEC");
+											  textElement2.classList.add("active");
+											  // You can perform additional actions here
+											});
+										  </script>
+	
+										  <script>
+											// Get the button element by its ID
+											var button2 = document.getElementById("myButton6");
+											var textElement2 = document.getElementById("myTd2");
+											// Add a click event handler
+											button2.addEventListener("click", function() {
+											  // Define the desired behavior
+											  
+											  textElement2.textContent="declined";
+											  textElement2.classList.remove("waiting");
+											  textElement2.classList.remove("active");
+											  textElement2.classList.add("DEC");
+											  // You can perform additional actions here
+											});
+										  </script>
+	
+
+									<td>499980</td>
+									<td>William Doe</th>
+								  <td>WilliamDoe@email.com</td>
+								  <td>0112556698</td>
+								  <th></th>
+								  <td> Nasr City</td>
+								  <td>MASTER CARD </td>
+								  <th></th>
+								  <td>BLACK</td>
+								  <td></th>
+								  <td>7800 EGP</td>
+                  <td>45454545</td>
+								  <th></th>
+								 
+							
+								</tr>
+
+
+
+								<tr class="alert" role="alert">
+									<td class="status"><span class="waiting"id="myTd3">pending</span></td>									
+									<td><button id="myButton7">approve</button>
+										<button id="myButton8">decline</button></td>
+	
+										<script>
+											// Get the button element by its ID
+											var button3 = document.getElementById("myButton7");
+											var textElement3 = document.getElementById("myTd3");
+											// Add a click event handler
+											button3.addEventListener("click", function() {
+											  // Define the desired behavior
+											  
+											  textElement3.textContent="approved";
+											  textElement3.classList.remove("waiting");
+											  textElement3.classList.remove("DEC");
+											  textElement3.classList.add("active");
+											  // You can perform additional actions here
+											});
+										  </script>
+	
+										  <script>
+											// Get the button element by its ID
+											var button3 = document.getElementById("myButton8");
+											var textElement3 = document.getElementById("myTd3");
+											// Add a click event handler
+											button3.addEventListener("click", function() {
+											  // Define the desired behavior
+											  
+											  textElement3.textContent="declined";
+											  textElement3.classList.remove("waiting");
+											  textElement3.classList.remove("active");
+											  textElement3.classList.add("DEC");
+											  // You can perform additional actions here
+											});
+										  </script>
+	
+
+									<td>499981</td>
+									<td>Sarah Phil</th>
+								  <td>SarahPhil@email.com</td>
+								  <td>0117778609</td>
+								  <th></th>
+								  <td> sherouk</td>
+								  <td>AMERICAN EXPRESS</td>
+								  <th></th>
+								  <td>GOLD</td>
+								  <td></th>
+								  <td>7450 EGP</td>
+                  <td>2345653</td>
+
+								  <th></th>
+								 
+							
+								</tr>
+
+
+								<tr class="alert" role="alert">
+									<td class="status"><span class="waiting"id="myTd4">pending</span></td>									
+									<td><button id="myButton9">approve</button>
+										<button id="myButton10">decline</button></td>
+	
+										<script>
+											// Get the button element by its ID
+											var button2 = document.getElementById("myButton9");
+											var textElement4 = document.getElementById("myTd4");
+											// Add a click event handler
+											button2.addEventListener("click", function() {
+											  // Define the desired behavior
+											  
+											  textElement4.textContent="approved";
+											  textElement4.classList.remove("waiting");
+											  textElement4.classList.remove("DEC");
+											  textElement4.classList.add("active");
+											  // You can perform additional actions here
+											});
+										  </script>
+	
+										  <script>
+											// Get the button element by its ID
+											var button2 = document.getElementById("myButton10");
+											var textElement4 = document.getElementById("myTd4");
+											// Add a click event handler
+											button2.addEventListener("click", function() {
+											  // Define the desired behavior
+											  
+											  textElement4.textContent="declined";
+											  textElement4.classList.remove("waiting");
+											  textElement4.classList.remove("active");
+											  textElement4.classList.add("DEC");
+											  // You can perform additional actions here
+											});
+										  </script>
+	
+
+									<td>499982</td>
+									<td>Claire Dunphy</th>
+								  <td>ClaireDunphy@email.com</td>
+								  <td>010998765</td>
+								  <th></th>
+								  <td> Maadi</td>
+								  <td>VISA </td>
+								  <th></th>
+								  <td>PLATINUM</td>
+								  <td></th>
+								  <td>1000 EGP</td>
+                  <td>78787878</td>
+
+								  <th></th>
+								 
+							
+								</tr>
+
+
+
+
+							
+						  </tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</body>
+</html>
+
