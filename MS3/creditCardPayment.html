@@ -147,9 +147,18 @@
                 <option value="volvo">1234 1234 1234 1234</option>
                 <option value="saab">5678 5678 5678 5678</option>
               </select>
+              <th>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
+              <th>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
+              <th>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
+              <th>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
+              <th>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
+              <th>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
+              <th>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
+              <th>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
+              <th>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
+
               <br><div class="col-md-6 form-group mb-3">
-                <label for="" class="col-form-label">Transfer Amount *</label>
-                <input type="number" class="form-control" name="amount" id="amount" placeholder="Enter Amount">
+                <input type="number" name="amount" id="amount" style="display:none;"  placeholder="Enter Amount">
               </div>
 
               <head>
@@ -177,6 +186,13 @@
                     }
                   }
                 </script>
+                <style>
+                  .hidden {
+                    display: none;
+                  }
+                </style>
+
+               
               </head>
               <body>
                 <label>
@@ -227,14 +243,12 @@
     <script src="Reports/contact-form-20/js/bootstrap.min.js"></script>
     <script src="Reports/contact-form-20/js/jquery.validate.min.js"></script>
     <script src="Reports/contact-form-20/js/main.js"></script> -->
-    //law partially e3ml checkBox el awl
-    //checkBox ll reminders
     <script>
     
 
         function clickDeal() {
-            
-            if( document.getElementById("amount").value>0){
+          var checkbox = document.getElementById('partialCB');
+            if( document.getElementById("amount").value>0 || checkbox.unchecked){
                 console.log("not empty");
                 location.href="submitReport.html";
             }
