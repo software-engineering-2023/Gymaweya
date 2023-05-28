@@ -15,7 +15,7 @@ https://templatemo.com/tm-590-topic-listing
   --secondary-color:              #274472;
   --section-bg-color:             #f0f8ff;
   --custom-btn-bg-color:          #274472;
-  --custom-btn-bg-hover-color:    #4f7227;
+  --custom-btn-bg-hover-color:    #dbe0d5;
   --dark-color:                   #000000;
   --p-color:                      #717275;
   --border-color:                 #274472;
@@ -68,7 +68,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+h8 {
   font-family: var(--title-font-family); 
   font-weight: var(--font-weight-semibold);
 }
@@ -99,7 +100,25 @@ h6 {
   color: var(--primary-color);
   font-size: var(--h6-font-size);
 }
+h8 {
+  font-size: var(--h1-font-size);
+  color: var(--primary-color);
+  margin-left: 170%;
 
+}
+h10 {
+  font-size: var(--h2-font-size);
+  color: var(--primary-color);
+  margin-left: 90%;
+
+}
+h11 {
+  margin-left: 110%;
+
+}
+.success{
+  margin-top: 50px;
+}
 p {
   color: var(--p-color);
   font-size: var(--p-font-size);
