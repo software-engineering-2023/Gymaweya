@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet">
-    <title>Home</title>
+    <title>Transfers</title>
     <!-- Bootstrap core CSS -->
     <link href="CreditCard&Loans/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   
@@ -123,7 +123,7 @@
       <div class="row align-items-stretch justify-content-center no-gutters">
         <div class="col-md-7">
           <div class="form h-100 contact-wrap p-5">
-            <h3 class="text-center">Payment</h3>
+            <h3 class="text-center">Internal Transfer</h3>
             <form class="mb-5" method="post" id="contactForm" name="contactForm">
               <div class="row">
                 <!--<div class="col-md-6 form-group mb-3">
@@ -135,7 +135,7 @@
                   <input type="email" class="form-control" name="email" id="email"  placeholder="Your email">
                 </div>
               </div>-->
-              <label for="cars">Choose your organization:</label>
+              <label for="cars">Choose desired:</label>
 
               <select name="Payments" id="oragnization">
                 <option value="Bills">Crédit Égide</option>
@@ -148,18 +148,35 @@
               </select>
               <br>
 
-              <div class="col-md-6 form-group mb-3">
-                <label for="" class="col-form-label">Enter Account Number *</label>
-                <input type="text" class="form-control" name="accNo" id="accNo" placeholder="Account Number">
-              </div>
-
-              <!--<label for="cars">By account:</label>
-
-              <select name="acount" id="account">
+              <label for="cars">Choose your account:</label>
+              <select name="card" id="card">
                 <option value="volvo">1234 1234 1234 1234</option>
                 <option value="saab">5678 5678 5678 5678</option>
-              </select>-->
-              <br><div class="col-md-6 form-group mb-3">
+              </select>
+              <br>
+              <label for="cars">By Country:</label>
+              <select name="Con" id="Country">
+                <option value="volvo">Bulgaria</option>
+                <option value="saab">Sudan</option>
+                <option value="ah">Colombia</option>
+                <option value="ba">Algeria</option>
+                <option value="la">France</option>
+                <option value="ka">Antartica</option>
+              </select>
+              <br>
+
+              <div class="col-md-6 form-group mb-3">
+                <label for="" class="col-form-label">Enter Account Number *</label>
+                <input type="text" class="form-control" name="accNo" id="account" placeholder="Account Number">
+              </div>
+              <br>
+              <div class="col-md-6 form-group mb-3">
+                <label for="" class="col-form-label">Enter IBAN *</label>
+                <input type="text" class="form-control" name="accNo" id="account" placeholder="Account Number">
+              </div>
+              
+
+              <div class="col-md-6 form-group mb-3">
                 <label for="" class="col-form-label">Transfer Amount *</label>
                 <input type="number" class="form-control" name="amount" id="amount" placeholder="Enter Amount">
               </div>
@@ -187,7 +204,7 @@
 
             <div id="form-message-warning mt-4"></div> 
             <div id="msg"  style="display: none;">
-                <h12 style="color:rgb(255, 0, 0)">Please enter valid amount</h12>
+                <h12 style="color:rgb(255, 0, 0)">Please enter valid amount and account</h12>
             </div>
 
           </div>
@@ -212,7 +229,7 @@
 
         function clickDeal() {
             
-            if( document.getElementById("amount").value>0){
+            if( document.getElementById("amount").value>0 | document.getElementById("account").value!=""){
                 console.log("not empty");
                 location.href="submitReport.html";
             }

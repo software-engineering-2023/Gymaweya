@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet">
-    <title>Home</title>
+    <title>Transfers</title>
     <!-- Bootstrap core CSS -->
     <link href="CreditCard&Loans/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   
@@ -138,8 +138,8 @@
               <label for="cars">Choose tranfer type:</label>
 
               <select name="bill" id="bill">
-                <option value="volvo">internal</option>
-                <option value="saab">international</option>
+                <option value="internalTransfer.html">internal</option>
+                <option value="internationalTransfer.html">international</option>
               </select>
               <br>
               <!--<label for="cars">account:</label>
@@ -200,19 +200,18 @@
       
       
       function clickDeal() {
-        
-          console.log("not empty");
-          location.href="submitReport.html";
-           <!--
-             if( document.getElementById("amount").value>0){
-           }
+        console.log(document.getElementById("bill").value)
+            if( document.getElementById("bill").value!=""){
+                console.log("not empty");
+               location.href=document.getElementById("bill").value;
+
+            }
             else{
                 console.log("here");
                 document.getElementById("msg").style.display = "block";
 
+
             }
-            console.log(document.getElementById("amount").value)
-          -->
         //     // document.getElementById("main-button-deal3").remove();
         //     // document.getElementById("main-button-deal4").remove();
         //     // document.getElementById("main-button-deal5").remove();

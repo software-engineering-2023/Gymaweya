@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet">
-    <title>Payments</title>
+    <title>Transfers</title>
     <!-- Bootstrap core CSS -->
     <link href="CreditCard&Loans/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   
@@ -123,7 +123,7 @@
       <div class="row align-items-stretch justify-content-center no-gutters">
         <div class="col-md-7">
           <div class="form h-100 contact-wrap p-5">
-            <h3 class="text-center">Payment</h3>
+            <h3 class="text-center">Internal Transfer</h3>
             <form class="mb-5" method="post" id="contactForm" name="contactForm">
               <div class="row">
                 <!--<div class="col-md-6 form-group mb-3">
@@ -135,28 +135,43 @@
                   <input type="email" class="form-control" name="email" id="email"  placeholder="Your email">
                 </div>
               </div>-->
-              <label for="cars">Choose your Payment:</label>
+              <label for="cars">Choose desired:</label>
 
-              <select name="Payments" id="Payments">
-                <option value="creditCardPayment.html">Credit Cards</option>
-                <option value="billPayment.html">Bills</option>
-                <option value="loansPayment.html">Loans</option>
-                <option value="Transfer.html">Transfer</option>
+              <select name="Payments" id="oragnization">
+                <option value="Bills">Crédit Égide</option>
+                <option value="org">CIB</option>
+                <option value="CC">BM</option>
+                <option value="Bills">NBD</option>
+                <option value="Bills">CBC</option>
+                
                 
               </select>
+              <br>
+
+              <label for="cars">Choose your account:</label>
+              <select name="card" id="card">
+                <option value="volvo">1234 1234 1234 1234</option>
+                <option value="saab">5678 5678 5678 5678</option>
+              </select>
+              <br>
+
+              <div class="col-md-6 form-group mb-3">
+                <label for="" class="col-form-label">Enter Account Number *</label>
+                <input type="number" class="form-control" name="accNo" id="account" placeholder="Account Number" required>
+              </div>
 
               <!--<label for="cars">By account:</label>
 
               <select name="acount" id="account">
                 <option value="volvo">1234 1234 1234 1234</option>
                 <option value="saab">5678 5678 5678 5678</option>
-              </select>
+              </select>-->
               <br><div class="col-md-6 form-group mb-3">
                 <label for="" class="col-form-label">Transfer Amount *</label>
-                <input type="number" class="form-control" name="amount" id="amount" placeholder="Enter Amount">
+                <input type="number" class="form-control" name="amount" id="amount" placeholder="Enter Amount" required>
               </div>
               <br>
-              <br>-->
+              <br>
               <style>
                 body {
                   background: url('resources1/images/banner-01.jpg') no-repeat center center;
@@ -179,7 +194,7 @@
 
             <div id="form-message-warning mt-4"></div> 
             <div id="msg"  style="display: none;">
-                <h12 style="color:rgb(255, 0, 0)">Please enter valid amount</h12>
+                <h12 style="color:rgb(255, 0, 0)">Please enter valid amount and account</h12>
             </div>
 
           </div>
@@ -203,18 +218,17 @@
     
 
         function clickDeal() {
-            console.log(document.getElementById("Payments").value)
-            if( document.getElementById("Payments").value!=""){
+            
+            if( document.getElementById("amount").value>0 || document.getElementById("account").value>0){
                 console.log("not empty");
-               location.href=document.getElementById("Payments").value;
-
+                location.href="submitReport.html";
             }
             else{
                 console.log("here");
                 document.getElementById("msg").style.display = "block";
 
-
             }
+            console.log(document.getElementById("amount").value)
         
         //     // document.getElementById("main-button-deal3").remove();
         //     // document.getElementById("main-button-deal4").remove();
