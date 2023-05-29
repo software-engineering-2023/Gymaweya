@@ -51,44 +51,7 @@
    
   
     <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
-      <div class="container">
-        <div class="row">
-          <div class="col-12" style="padding: 0px 0px 0px 0px;">
-            <nav class="main-nav">
-              <!-- ***** Logo Start ***** -->
-              <a href="index.html" class="logo">
-                <img src="assets/images/logo2.png" alt="" style="width: fit-content; height: fit-content;">
-                <img src="assets/images/name2.png" alt="" style="width: fit-content;  width: 150px; height: fit-content;">
-              </a>
-              <!-- ***** Logo End ***** -->
-              <!-- ***** Menu Start ***** -->
-              <ul class="nav">
-  
-                <li><a href="index.html" class="active">Home</a></li>
-                
-                <li><a href="index.html" id="ignoreCSS">
-                  <i class="fa fa-envelope" id=profile></i></a></li>
-                <li>
-                  <a href="index.html" id="ignoreCSS">
-                    <i class="fa fa-user" id=profile></i></a>
-                </li>
-                <li>
-                  <div class="main-button">
-                    <a href="index.html" style="background-color: #eae6e6; color: #000000; 
-                  text-align: center; padding: 10px 20px;">Log Out &#8680</a>
-                  </div>
-                </li>
-              </ul>
-              <a class='menu-trigger'>
-                <span>Menu</span>
-              </a>
-              <!-- ***** Menu End ***** -->
-            </nav>
-          </div>
-        </div>
-      </div>
-    </header>
+
     <!-- ***** Header Area End ***** -->
 
 
@@ -112,12 +75,46 @@
 
 
   
-  <body>
+  <body style="margin-top:-3.5%">
 
 
-   <section
-
-  <div class="content">
+   <section>
+    <header class="header-area header-sticky">
+      <div class="container">
+        <div class="row">
+          <div class="col-12" style="padding: 0px 0px 0px 0px;">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <a href="index.html" class="logo">
+                <img src="assets/images/logo2.png" alt="" style="width: fit-content; height: fit-content;">
+                <img src="assets/images/name2.png" alt="" style="width: fit-content;  width: 150px; height: fit-content;">
+              </a>
+              <!-- ***** Logo End ***** -->
+              <!-- ***** Menu Start ***** -->
+              <ul class="nav">
+  
+                <li><a href="loggedHome.html">Home</a></li>
+                <li><a onclick="history.back()" style="padding: 0%;">
+                  <i class="fa fa-arrow-circle-left" id=profile style="color: aliceblue;"></i></a>
+                  </li>
+                  
+                <li>
+                  <div class="main-button">
+                    <a href="index.html" style="background-color: #eae6e6; color: #000000; 
+                  text-align: center; padding: 10px 20px;">Log Out &#8680</a>
+                  </div>
+                </li>
+              </ul>
+              <a class='menu-trigger'>
+                <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+   <div class="content">
     
     <div class="container" id="reportcontainer">
       <div class="row align-items-stretch justify-content-center no-gutters">
@@ -151,6 +148,10 @@
                 <option value="saab">5678 5678 5678 5678</option>
               </select>
               <br> 
+              <label for="cars">Amount:</label>
+
+              <input type="number" name="amount" id="amount"   placeholder="Enter Amount">
+
               <!--<div class="col-md-6 form-group mb-3">
                 <label for="" class="col-form-label">Transfer Amount *</label>
                 <input type="number" class="form-control" name="amount" id="amount" placeholder="Enter Amount">
@@ -162,7 +163,12 @@
                   background-size: cover;
                 }
                 </style>
-              
+              <div id="form-message-warning mt-4"></div> 
+              <div id="msg"  style="display: none;">
+                  <h12 style="color:rgb(255, 0, 0)">Please enter the amount</h12>
+                </div>
+                
+              </div>
               
               
               <th>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
@@ -175,11 +181,6 @@
                 </div>
               </div>
             </form>
-            
-            <div id="form-message-warning mt-4"></div> 
-            <div id="msg"  style="display: none;">
-                <h12 style="color:rgb(255, 0, 0)">Please enter valid name and email</h12>
-              </div>
               
             </div>
           </div>
@@ -203,24 +204,25 @@
       
       function clickDeal() {
         
-          console.log("not empty");
-          location.href="submitReport.html";
-           <!--
-             if( document.getElementById("amount").value>0){
-           }
-            else{
-                console.log("here");
-                document.getElementById("msg").style.display = "block";
+        console.log("not empty");
 
-            }
-            console.log(document.getElementById("amount").value)
-          -->
-        //     // document.getElementById("main-button-deal3").remove();
-        //     // document.getElementById("main-button-deal4").remove();
-        //     // document.getElementById("main-button-deal5").remove();
-        //     // document.getElementById("main-button-deal6").remove();
-    
-        }
+         
+           if( document.getElementById("amount").value>0){
+            location.href="submitReport.html";
+         }
+          else{
+              console.log("here");
+              document.getElementById("msg").style.display = "block";
+
+          }
+          console.log(document.getElementById("amount").value)
+        
+      //     // document.getElementById("main-button-deal3").remove();
+      //     // document.getElementById("main-button-deal4").remove();
+      //     // document.getElementById("main-button-deal5").remove();
+      //     // document.getElementById("main-button-deal6").remove();
+  
+      }
     
       
     
