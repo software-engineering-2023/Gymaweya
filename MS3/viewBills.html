@@ -25,30 +25,39 @@
 
 
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <style>
+    #ignoreCSS {
+      all: unset;
+    }
+
+    html,
+    body,
+    .content {
+      background-color: #373737;
+    }
+
+    #ignorePadding {
+      padding: 0;
+    }
+  </style>
 
 </head>
+
 <body>
 
-
-    <style>
-        body {
-          background: url('viewBills/resources1/images/banner-01.jpg') no-repeat center center;
-background-size: cover;
-        }
-        </style>
-
-    <!-- ***** Preloader Start ***** -->
-    <div id="js-preloader" class="js-preloader">
-      <div class="preloader-inner">
-        <span class="dot"></span>
-        <div class="dots">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
-     <!-- ***** Preloader End ***** -->
+  </div>
+  <!-- ***** Preloader End ***** -->
+
 
   <!-- ***** Header Area Start ***** -->
   <header class="header-area header-sticky">
@@ -57,21 +66,20 @@ background-size: cover;
         <div class="col-12" style="padding: 0px 0px 0px 0px;">
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
-            <a href="index.html" class="logo">
-              <img src="viewBills/assets/images/logo2.png" alt="" style="width: fit-content; height: fit-content;">
-              <img src="viewBills/assets/images/name2.png" alt="" style="width: fit-content;  width: 150px; height: fit-content;">
+            <a href="#" class="logo">
+              <img src="resources1/images/logo2.png" alt="" style="width: fit-content; height: fit-content;">
+              <img src="resources1/images/name2.png" alt=""
+                style="width: fit-content;  width: 150px; height: fit-content;">
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
 
-              <li><a href="loggedHome.html" class="active">Home</a></li>
-              <li><a href="#announcements">Announcements</a></li>
-              <li><a href="index.html" id="ignoreCSS">
-                <i class="fa fa-envelope" id=profile></i></a></li>
-              <li>
-                <a href="index.html" id="ignoreCSS">
-                  <i class="fa fa-user" id=profile></i></a>
+              <li><a href="loggedHome.html" style="font-size: 20px; ">Home</a></li>
+              <!-- <li><a href="#announcements">Announcements</a></li> -->
+
+              <li><a onclick="history.back()" style="padding: 0%;">
+                  <i class="fa fa-arrow-circle-left" id=profile style="color: aliceblue;"></i></a>
               </li>
               <li>
                 <div class="main-button">
