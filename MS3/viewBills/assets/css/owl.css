@@ -29,6 +29,7 @@
   .owl-carousel .owl-stage-outer {
     position: relative;
     overflow: hidden;
+    height: 550px;
     /* fix for flashing background */
     -webkit-transform: translate3d(0px, 0px, 0px); }
   .owl-carousel .owl-wrapper,

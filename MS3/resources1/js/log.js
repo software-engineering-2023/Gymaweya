@@ -7,7 +7,7 @@ const progressText = document.querySelectorAll(".step p");
 const progressCheck = document.querySelectorAll(".step .check");
 const bullet = document.querySelectorAll(".step .bullet");
 let current = 1;
-nextBtnFirst.addEventListener("click", function(event){
+nextBtnFirst.addEventListener("click", function (event) {
   event.preventDefault();
   slidePage.style.marginLeft = "-25%";
   bullet[current - 1].classList.add("active");
@@ -15,14 +15,28 @@ nextBtnFirst.addEventListener("click", function(event){
   progressText[current - 1].classList.add("active");
   current += 1;
 });
-submitBtn.addEventListener("click", function(){
+submitBtn.addEventListener("click", function () {
   bullet[current - 1].classList.add("active");
   progressCheck[current - 1].classList.add("active");
   progressText[current - 1].classList.add("active");
   current += 1;
-  window.open("loggedHome.html");
+  user = document.getElementById("username").value;
+  if (user == "admin") {
+    window.open("Admin.html");
+    return;
+  }
+  if (user == "client") {
+    window.open("loggedHome.html");
+    return;
+  }
+  if (user == "banker") {
+    window.open("banker.html");
+    return;
+  }
+
+
 });
-prevBtnSec.addEventListener("click", function(event){
+prevBtnSec.addEventListener("click", function (event) {
   event.preventDefault();
   slidePage.style.marginLeft = "0%";
   bullet[current - 2].classList.remove("active");

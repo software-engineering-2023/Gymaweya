@@ -216,8 +216,7 @@ body {
 }
 
 section {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 120px;
 }
 
 .section-heading {
@@ -420,8 +419,8 @@ Header Style
 }
 
 .header-area .main-nav .nav li {
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .header-area .main-nav .nav li a {
@@ -1711,8 +1710,8 @@ body #user-button:hover .u-icons, body #user-button:focus-within .u-icons {
 
 @media (prefers-color-scheme: dark) {
   body:not(.light) {
-    /* background: #373737;
-    color: rgb(9, 9, 9); */
+    background: #373737;
+    color: white;
   }
 }
 body .credit {

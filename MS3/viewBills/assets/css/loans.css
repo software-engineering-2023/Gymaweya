@@ -170,6 +170,7 @@ body {
   color: #fff;
 }
 
+
 .main-button a {
   font-size: 14px;
   color: #fff;
@@ -188,7 +189,7 @@ body {
 #services {
   font-size: 14px;
   color: #fff;
-  width: 160px;
+  width: 250px;
   text-align: center;
  justify-items: center;
   background-color: #274472;
@@ -216,8 +217,7 @@ body {
 }
 
 section {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 120px;
 }
 
 .section-heading {
@@ -232,10 +232,10 @@ section {
   margin-top: 0px;
   margin-bottom: 20px;
   line-height: 36px;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 700;
   text-transform: capitalize;
-  color: #e1d6d6;
+  color: #274472;
 }
 
 /* 
@@ -403,7 +403,9 @@ Header Style
 .background-header .main-nav .logo img {
   padding-left: 5px;
 } */
-
+.points-img{
+  size: 10%;
+}
 .header-area .main-nav .nav {
   flex-basis: 70%;
   display: flex;
@@ -420,8 +422,8 @@ Header Style
 }
 
 .header-area .main-nav .nav li {
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .header-area .main-nav .nav li a {
@@ -772,15 +774,15 @@ Banner Style
   transition: all 0.5s ease;
 }
 #section-1 .more-info {
-  margin-top: 60px;
-  background-color: rgba(255,255,255 ,0.6);
-  padding: 30px 10px 30px 10px;
+  margin-top: 100px;
+  /* background-color: rgba(255,255,255 ,0.6); */
+  padding: 15px 15px 15px 15px;
   border-radius: 61px;
   position: absolute;
-  min-inline-size: 80%;
-  width:80%;
-  left: 10%;
-  right: 10%;
+  min-inline-size: 25%;
+  width:25%;
+  left: 40%;
+  right: 40%;
   bottom: 130px;
   display: flex;
   flex-direction: row;
@@ -830,6 +832,13 @@ Banner Style
   margin-top: 8px;
   text-align: right;
 }
+#section-1 .viewLoan{
+    /* background-color: rgba(145, 30, 30, 0.6); */
+  position: absolute;
+  width: 30%;
+  left: 70%;
+  top: 12%;
+  }
 #section-1 .main-button a:hover {
   background-color: #274472;
   border-color: #274472;
@@ -841,20 +850,25 @@ Banner Style
   box-sizing: border-box;
 }
 #section-1 .content-slider .slider .banner .banner-inner-wrapper .main-caption {
+ background-color: rgba(255,255,255 ,0.6);
+ padding: 20px 20px 20px 20px;
   position: absolute;
-  width: 100%;
+  height:120%;
+  width: 30%;
+  left: 10%;
   top: 40%;
   transform: translateY(-50%);
 }
 #section-1 .content-slider .slider .banner .banner-inner-wrapper h2 {
-  font-weight: 500;
-  font-size: 20px;
-  color: #fff;
+  font-weight: 300;
+  font-size: 30px;
+  color: #274472;
   margin-bottom: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #section-1 .content-slider .slider .banner .banner-inner-wrapper h1 {
-  font-size: 50px;
-  color: #fff;
+  font-size: 20px;
+  color: #000000;
   font-weight: 700;
   margin-bottom: 30px;
 }
@@ -864,21 +878,21 @@ Banner Style
   transition: 0.3s;
 }
 #section-1 .content-slider .slider #top-banner-1 {
-  background: url('../images/banner-01.jpg') no-repeat center center;
+  background: url('../images/personal\ loan.jpg') no-repeat center center;
   background-size: cover;
 }
 #section-1 .content-slider .slider #top-banner-2 {
-  background: url('../images/banner-02.jpg') no-repeat center center;
+  background: url('../images/car\ loan.jpg') no-repeat center center;
   background-size: cover;
 }
-#section-1 .content-slider .slider #top-banner-3 {
-  background: url('../images/banner-03.jpg') no-repeat center center;
-  background-size: cover;
+.space{
+  
+        height: 300px;
+        width: 100%;
+    
+      
 }
-#section-1 .content-slider .slider #top-banner-4 {
-  background: url('../images/banner-04.jpg') no-repeat center center;
-  background-size: cover;
-}
+
 #section-1 .content-slider nav {
   position: absolute;
   bottom: 30px;
@@ -937,30 +951,22 @@ Banner Style
   color: #274472;
 }
 #section-1 .content-slider #banner1:checked ~ .slider #top-banner-1,
-#section-1 .content-slider #banner2:checked ~ .slider #top-banner-2,
-#section-1 .content-slider #banner3:checked ~ .slider #top-banner-3,
-#section-1 .content-slider #banner4:checked ~ .slider #top-banner-4 {
+#section-1 .content-slider #banner2:checked ~ .slider #top-banner-2{
   opacity: 1;
   z-index: 1;
 }
 #section-1 .content-slider #banner1:checked ~ nav label:nth-of-type(1),
-#section-1 .content-slider #banner2:checked ~ nav label:nth-of-type(2),
-#section-1 .content-slider #banner3:checked ~ nav label:nth-of-type(3),
-#section-1 .content-slider #banner4:checked ~ nav label:nth-of-type(4) {
+#section-1 .content-slider #banner2:checked ~ nav label:nth-of-type(2) {
   cursor: default;
   color: #fff;
   transition: all 0.5s;
 }
 #section-1 .content-slider #banner1:checked ~ nav label:nth-of-type(1) .progressbar,
-#section-1 .content-slider #banner2:checked ~ nav label:nth-of-type(2) .progressbar,
-#section-1 .content-slider #banner3:checked ~ nav label:nth-of-type(3) .progressbar,
-#section-1 .content-slider #banner4:checked ~ nav label:nth-of-type(4) .progressbar {
+#section-1 .content-slider #banner2:checked ~ nav label:nth-of-type(2) .progressbar{
   background: #fff;
 }
 #section-1 .content-slider #banner1:checked ~ nav label:nth-of-type(1) .progressbar-fill,
-#section-1 .content-slider #banner2:checked ~ nav label:nth-of-type(2) .progressbar-fill,
-#section-1 .content-slider #banner3:checked ~ nav label:nth-of-type(3) .progressbar-fill,
-#section-1 .content-slider #banner4:checked ~ nav label:nth-of-type(4) .progressbar-fill {
+#section-1 .content-slider #banner2:checked ~ nav label:nth-of-type(2) .progressbar-fill{
   animation: progressBarFill 5s linear;
 }
 /* Animations */
@@ -1265,7 +1271,7 @@ About Page Style
   min-height: 100%;
   max-height: 100%;
   position: relative;
-  margin-top: -70px;
+  margin-top: 70px;
   background-color: #fff;
   border-radius: 23px;
   padding: 60px;
@@ -1298,7 +1304,7 @@ About Page Style
 
 .cities-town .owl-nav {
   position: absolute;
-  top: -60px;
+  top: -90px;
   right: 0;
 }
 
@@ -1339,7 +1345,8 @@ About Page Style
 }
 
 .weekly-offers .container-fluid {
-  padding: 0px 80px;
+  padding: 30px 30px;
+  
 }
 
 .weekly-offers .item {
@@ -1349,16 +1356,16 @@ About Page Style
 }
 
 .weekly-offers .item .thumb img {
-  padding-right: 160px;
+  /* padding-right: 160px; */
   border-radius: 23px;
 }
 
 .weekly-offers .item .thumb .text {
   position: absolute;
   background-color: #fff;
-  border-radius: 23px;
+  border-radius: 30px;
   right: 0;
-  top: 50%;
+  top: 65%;
   transform: translateY(-50%);
   box-shadow: 0px 0px 15px rgba(0,0,0,0.15);
   padding: 30px;
@@ -1411,7 +1418,17 @@ About Page Style
   color: #fff;
   opacity: 0.85;
 }
-
+.weekly-offers .item .thumb .text .main-button a {
+  background-color: #274472;
+  border-color: #274472;
+  color: #ffffff;
+}
+.main-button-deal-disabbled{
+  background-color: #722727;
+  border-color: #274472;
+  color: #ffffff;
+  opacity:0.8;
+}
 .weekly-offers .owl-nav {
   text-align: center;
   margin-top: 30px;
@@ -1711,8 +1728,8 @@ body #user-button:hover .u-icons, body #user-button:focus-within .u-icons {
 
 @media (prefers-color-scheme: dark) {
   body:not(.light) {
-    /* background: #373737;
-    color: rgb(9, 9, 9); */
+    background: #373737;
+    color: white;
   }
 }
 body .credit {
