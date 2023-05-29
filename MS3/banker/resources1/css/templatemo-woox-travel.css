@@ -480,7 +480,7 @@ Header Style
   justify-content: flex-end;
   vertical-align: middle;
   margin-top: 15px;
-  margin-right: 0px;
+  margin-right: 50px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -490,14 +490,14 @@ Header Style
 }
 
 .header-area .main-nav .nav li {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .header-area .main-nav .nav li a {
   display: block;
-  font-weight: 400;
-  font-size: 15px;
+  font-weight: 450;
+  font-size: 12px;
   text-transform: capitalize;
   color: #090909;
   -webkit-transition: all 0.3s ease 0s;

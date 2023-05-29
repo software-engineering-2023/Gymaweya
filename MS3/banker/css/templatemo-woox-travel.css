@@ -426,7 +426,7 @@ Header Style
 .header-area .main-nav .nav li a {
   display: block;
   font-weight: 450;
-  font-size: 11px;
+  font-size: 10px;
   text-transform: capitalize;
   color: #090909;
   -webkit-transition: all 0.3s ease 0s;
