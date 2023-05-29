@@ -71,7 +71,7 @@
 
     .popup {
       background-color: #ffffff;
-      width: 420px;
+      width: 450px;
       padding: 0;
       position: fixed;
       transform: translate(-50%, -50%);
@@ -155,6 +155,12 @@
     #close:hover {
       background-color: rgb(217, 7, 7);
     }
+
+    html,
+    body,
+    #announcements {
+      background-color: #373737;
+    }
   </style>
 </head>
 
@@ -182,7 +188,8 @@
             <!-- ***** Logo Start ***** -->
             <a href="#" class="logo">
               <img src="resources1/images/logo2.png" alt="" style="width: fit-content; height: fit-content;">
-              <img src="resources1/images/name2.png" alt="" style="width: fit-content;  width: 150px; height: fit-content;">
+              <img src="resources1/images/name2.png" alt=""
+                style="width: fit-content;  width: 150px; height: fit-content;">
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
@@ -236,7 +243,7 @@
                   <div class="more-info">
                     <div class="row">
                       <div class="col-lg-3 col-sm-6 col-6">
-                        <a id="services" href="transactions.html">Transactions</a>
+                        <a id="services" href="Payments.html">Transactions</a>
                       </div>
                       <div class="col-lg-3 col-sm-6 col-6">
                         <a id="services" href="creditCard.html">Credit Cards</a>
@@ -265,7 +272,7 @@
                   <div class="more-info">
                     <div class="row">
                       <div class="col-lg-3 col-sm-6 col-6">
-                        <a id="services" href="transactions.html">Transactions</a>
+                        <a id="services" href="Payments.html">Transactions</a>
                       </div>
                       <div class="col-lg-3 col-sm-6 col-6">
                         <a id="services" href="creditCard.html">Credit Cards</a>
@@ -294,7 +301,7 @@
                   <div class="more-info">
                     <div class="row">
                       <div class="col-lg-3 col-sm-6 col-6">
-                        <a id="services" href="transactions.html">Transactions</a>
+                        <a id="services" href="Payments.html">Transactions</a>
                       </div>
                       <div class="col-lg-3 col-sm-6 col-6">
                         <a id="services" href="creditCard.html">Credit Cards</a>
@@ -324,7 +331,7 @@
                   <div class="more-info">
                     <div class="row">
                       <div class="col-lg-3 col-sm-6 col-6">
-                        <a id="services" href="transactions.html">Transactions</a>
+                        <a id="services" href="Payments.html">Transactions</a>
                       </div>
                       <div class="col-lg-3 col-sm-6 col-6">
                         <a id="services" href="creditCard.html">Credit Cards</a>
@@ -353,7 +360,7 @@
                   <div class="more-info">
                     <div class="row">
                       <div class="col-lg-3 col-sm-6 col-6">
-                        <a id="services" href="transactions.html">Transactions</a>
+                        <a id="services" href="Payments.html">Transactions</a>
                       </div>
                       <div class="col-lg-3 col-sm-6 col-6">
                         <a id="services" href="creditCard.html">Credit Cards</a>
@@ -382,7 +389,7 @@
                   <div class="more-info">
                     <div class="row">
                       <div class="col-lg-3 col-sm-6 col-6">
-                        <a id="services" href="transactions.html">Transactions</a>
+                        <a id="services" href="Payments.html">Transactions</a>
                       </div>
                       <div class="col-lg-3 col-sm-6 col-6">
                         <a id="services" href="creditCard.html">Credit Cards</a>
@@ -411,7 +418,7 @@
                   <div class="more-info">
                     <div class="row">
                       <div class="col-lg-3 col-sm-6 col-6">
-                        <a id="services" href="transactions.html">Transactions</a>
+                        <a id="services" href="Payments.html">Transactions</a>
                       </div>
                       <div class="col-lg-3 col-sm-6 col-6">
                         <a id="services" href="creditCard.html">Credit Cards</a>
@@ -638,7 +645,7 @@
 
 
     <div class="notification-ui_dd-header">
-      <h3 class="text-center">Notifications</h3>
+      <h3 class="text-center">Notifications & Reminders</h3>
     </div>
     <div class="notification-ui_dd-content">
       <a href="#!" onclick="popupDetailed(this);" class="notification-list notification-list--unread text-dark">
@@ -651,21 +658,26 @@
       <a href="#!" onclick="popupDetailed(this);" class="notification-list notification-list--unread text-dark">
         <div class="notification-list_detail">
           <p><b>Issue Fixed</b> <br><span class="text-muted">Reports</span></p>
-          <p id="notificationDetails" class="nt-link text-truncate">Great news! We're happy to inform you that the issue you reported of the open account form has been successfully resolved. Thank you for bringing it to our attention and please don't hesitate to contact us again if you have any further concerns.</p>
+          <p id="notificationDetails" class="nt-link text-truncate">Great news! We're happy to inform you that the issue
+            you reported of the open account form has been successfully resolved. Thank you for bringing it to our
+            attention and please don't hesitate to contact us again if you have any further concerns.</p>
         </div>
         <p><small>5 hours ago</small></p>
       </a>
       <a href="#!" onclick="popupDetailed(this);" class="notification-list text-dark">
         <div class="notification-list_detail">
           <p><b>Points Expiration</b> <br><span class="text-muted">Credit-Card</span></p>
-          <p id="notificationDetails" class="nt-link text-truncate">Important notice: Your card points are set to expire soon. Don't miss out on your rewards! Remember to redeem your points before the expiration date to enjoy great benefits and exclusive perks.</p>
+          <p id="notificationDetails" class="nt-link text-truncate">Important notice: Your card points are set to expire
+            soon. Don't miss out on your rewards! Remember to redeem your points before the expiration date to enjoy
+            great benefits and exclusive perks.</p>
         </div>
         <p><small>Yesterday</small></p>
       </a>
       <a href="#!" onclick="popupDetailed(this);" class="notification-list text-dark">
         <div class="notification-list_detail">
           <p><b>Succesful Transaction</b> <br><span class="text-muted">Transactions</span></p>
-          <p id="notificationDetails" class="nt-link text-truncate">Your transaction to Account Number : 12345 has been successfully your current
+          <p id="notificationDetails" class="nt-link text-truncate">Your transaction to Account Number : 12345 has been
+            successfully your current
             balance is 1090$</p>
         </div>
         <p><small>Yesterday</small></p>
@@ -673,21 +685,25 @@
       <a href="#!" onclick="popupDetailed(this);" class="notification-list notification-list--unread text-dark">
         <div class="notification-list_detail">
           <p><b>Electricity Bill Paid</b> <br><span class="text-muted">Transactions</span></p>
-          <p id="notificationDetails" class="nt-link text-truncate">Thank you for paying your electricity bill through our bank. Your timely payment helps ensure uninterrupted power supply to your home and the community. We appreciate your trust and look forward to continuing to serve you.</p>
+          <p id="notificationDetails" class="nt-link text-truncate">Thank you for paying your electricity bill through
+            our bank. Your timely payment helps ensure uninterrupted power supply to your home and the community. We
+            appreciate your trust and look forward to continuing to serve you.</p>
         </div>
         <p><small>Yesterday</small></p>
       </a>
       <a href="#!" onclick="popupDetailed(this);" class="notification-list notification-list--unread text-dark">
         <div class="notification-list_detail">
           <p><b>Loan Application Accepted</b> <br><span class="text-muted">Loans</span></p>
-          <p id="notificationDetails" class="nt-link text-truncate">Congratulations! Your loan application has been accepted and approved. We look forward to helping you achieve your financial goals.</p>
+          <p id="notificationDetails" class="nt-link text-truncate">Congratulations! Your loan application has been
+            accepted and approved. We look forward to helping you achieve your financial goals.</p>
         </div>
         <p><small>2 day ago</small></p>
       </a>
-      <a href="#!"  onclick="popupDetailed(this);" class="notification-list text-dark">
+      <a href="#!" onclick="popupDetailed(this);" class="notification-list text-dark">
         <div class="notification-list_detail">
           <p><b>Succesful Transaction</b> <br><span class="text-muted">Transactions</span></p>
-          <p id="notificationDetails" class="nt-link text-truncate">Your transaction to Account Number : 12345 has been successfully your current
+          <p id="notificationDetails" class="nt-link text-truncate">Your transaction to Account Number : 12345 has been
+            successfully your current
             balance is 1290$</p>
         </div>
         <p><small>3 day ago</small></p>
@@ -695,7 +711,8 @@
       <a href="#!" onclick="popupDetailed(this);" class="notification-list text-dark">
         <div class="notification-list_detail">
           <p><b>Lost Credit Card</b> <br><span class="text-muted">Credit Cards</span></p>
-          <p id="notificationDetails" class="nt-link text-truncate">We are notifying you that you reported credit card is succesfully disabled
+          <p id="notificationDetails" class="nt-link text-truncate">We are notifying you that you reported credit card
+            is succesfully disabled
             you can apply for a new one here on our website.</p>
         </div>
         <p><small>3 day ago</small></p>
@@ -763,14 +780,14 @@
       //document.body.style.overflow = 'auto';
     });
 
-    function popupDetailed( e) {
+    function popupDetailed(e) {
 
       popupDetailedContent.textContent = e.getElementsByTagName('p')[1].innerHTML;
       popupDetailedOverlay.style.display = "block";
-    // document.body.style.overflow = 'hidden';
-    // e.style.backgroundColor = "#fff";
-    // e.style.borderLeft = "0px !important";
-    e.classList.remove('notification-list--unread');
+      // document.body.style.overflow = 'hidden';
+      // e.style.backgroundColor = "#fff";
+      // e.style.borderLeft = "0px !important";
+      e.classList.remove('notification-list--unread');
 
     }
   </script>

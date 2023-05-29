@@ -51,44 +51,7 @@
    
   
     <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
-      <div class="container">
-        <div class="row">
-          <div class="col-12" style="padding: 0px 0px 0px 0px;">
-            <nav class="main-nav">
-              <!-- ***** Logo Start ***** -->
-              <a href="index.html" class="logo">
-                <img src="assets/images/logo2.png" alt="" style="width: fit-content; height: fit-content;">
-                <img src="assets/images/name2.png" alt="" style="width: fit-content;  width: 150px; height: fit-content;">
-              </a>
-              <!-- ***** Logo End ***** -->
-              <!-- ***** Menu Start ***** -->
-              <ul class="nav">
-  
-                <li><a href="index.html" class="active">Home</a></li>
-                
-                <li><a href="index.html" id="ignoreCSS">
-                  <i class="fa fa-envelope" id=profile></i></a></li>
-                <li>
-                  <a href="index.html" id="ignoreCSS">
-                    <i class="fa fa-user" id=profile></i></a>
-                </li>
-                <li>
-                  <div class="main-button">
-                    <a href="index.html" style="background-color: #eae6e6; color: #000000; 
-                  text-align: center; padding: 10px 20px;">Log Out &#8680</a>
-                  </div>
-                </li>
-              </ul>
-              <a class='menu-trigger'>
-                <span>Menu</span>
-              </a>
-              <!-- ***** Menu End ***** -->
-            </nav>
-          </div>
-        </div>
-      </div>
-    </header>
+    
     <!-- ***** Header Area End ***** -->
 
 
@@ -112,10 +75,47 @@
 
 
   
-  <body>
+   <body style="margin-top:-3.5%"></body>>
 
 
-   
+   <section>
+
+    <header class="header-area header-sticky">
+      <div class="container">
+        <div class="row">
+          <div class="col-12" style="padding: 0px 0px 0px 0px;">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <a href="index.html" class="logo">
+                <img src="assets/images/logo2.png" alt="" style="width: fit-content; height: fit-content;">
+                <img src="assets/images/name2.png" alt="" style="width: fit-content;  width: 150px; height: fit-content;">
+              </a>
+              <!-- ***** Logo End ***** -->
+              <!-- ***** Menu Start ***** -->
+              <ul class="nav">
+  
+                <li><a href="loggedHome.html">Home</a></li>
+                <li><a onclick="history.back()" style="padding: 0%;">
+                  <i class="fa fa-arrow-circle-left" id=profile style="color: aliceblue;"></i></a>
+                  </li>
+                <li>
+                  <div class="main-button">
+                    <a href="index.html" style="background-color: #eae6e6; color: #000000; 
+                  text-align: center; padding: 10px 20px;">Log Out &#8680</a>
+                  </div>
+                </li>
+              </ul>
+              <a class='menu-trigger'>
+                <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    
 
   <div class="content">
     
@@ -123,7 +123,7 @@
       <div class="row align-items-stretch justify-content-center no-gutters">
         <div class="col-md-7">
           <div class="form h-100 contact-wrap p-5">
-            <h3 class="text-center">Internal Transfer</h3>
+            <h3 class="text-center">International Transfer</h3>
             <form class="mb-5" method="post" id="contactForm" name="contactForm">
               <div class="row">
                 <!--<div class="col-md-6 form-group mb-3">
@@ -217,7 +217,7 @@
 
   </div>
   
-    
+    </section>
 
     <!-- <script src="Reports/contact-form-20/js/jquery-3.3.1.min.js"></script>
     <script src="Reports/contact-form-20/js/popper.min.js"></script>
@@ -250,5 +250,46 @@
       
     
       </script>
+
+<div class="more-info reservation-info call-to-action" id="contactUs">
+  <div class="container">
+    <div class="row">
+      <h2>Contact US</h2>
+      <div class="col-lg-4 col-sm-6">
+        <div class="info-item">
+          <i class="fa fa-phone"></i>
+          <h5 style="color: #274472;">Make a Phone Call</h5>
+          <h7 style="color: #274472;">+123 456 789 </h7>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="info-item">
+          <i class="fa fa-envelope"></i>
+          <h5 style="color: #274472;">Contact Us via Email</h5>
+          <h7 style="color: #274472;">creditegide@email.com</h7>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="info-item">
+          <i class="fa fa-map-marker"></i>
+          <h5 style="color: #274472;">Visit Our Branches</h5>
+          <a href="#location">24th Street North Avenue Cairo, Egypt</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <p>Copyright © 2023 <a href="index.html">Crédit Égide</a> Bank. All rights reserved.
+        </P>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
   </body>
 </html>
