@@ -1710,7 +1710,7 @@ body #user-button:hover .u-icons, body #user-button:focus-within .u-icons {
 
 @media (prefers-color-scheme: dark) {
   body:not(.light) {
-    background: #373737;
+    /* background: #373737; */
     color: white;
   }
 }
