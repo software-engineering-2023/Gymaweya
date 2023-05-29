@@ -98,8 +98,8 @@
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
-										<label>Account Type</label>
-										<input type="text" class="form-control" >
+										<label>Date</label>
+										<input type="text" class="form-control" placeholder="today's date">
 									</div>
 								</div>
 							</div>
@@ -108,7 +108,7 @@
 								<label>Reason for closing your account</label>
 								<textarea class="form-control" id="message" placeholder="Write you message here..." style="height:100px;"></textarea>
 							</div>
-							<button class=" popup glow-on-hover" onclick="myFunction()" type="button" >Submit request
+							<button class=" popup glow-on-hover" onclick="myFunction();check()" type="button" >Submit request
 								<span class="popuptext" id="myPopup">Request sent , wait for a confirmation message</span></button><p><br/></p>
 
 						</form>
@@ -187,6 +187,25 @@
 		</script>
 
 
+<script>
+    $(".option").click(function () {
+      $(".option").removeClass("active");
+      $(this).addClass("active");
+    });
+    function check() {
+
+      var allitems = true;
+      document.getElementById("reservation-form").querySelectorAll("[required]").forEach(item => {
+        if (!item.value) {
+          allitems = false;
+          return;
+        }
+      });
+      if (allitems && !alert("Form Submitted SuccessfullyPage will reload")) { window.location.reload(); }
+      else
+        alert("fill all the fields");
+    }
+  </script>
 
 </body>
 </html>
