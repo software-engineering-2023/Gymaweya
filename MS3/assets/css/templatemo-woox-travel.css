@@ -1711,8 +1711,8 @@ body #user-button:hover .u-icons, body #user-button:focus-within .u-icons {
 
 @media (prefers-color-scheme: dark) {
   body:not(.light) {
-    background: #373737;
-    color: white;
+    /* background: #373737;
+    color: rgb(9, 9, 9); */
   }
 }
 body .credit {
