@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <title>Crédit Égide Home</title>
+  <!-- Bootstrap core CSS -->
+  <link href="resources1/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="resources1/css/fontawesome.css">
+  <link rel="stylesheet" href="resources1/css/templatemo-woox-travel.css">
+  <link rel="stylesheet" href="resources1/css/owl.css">
+  <link rel="stylesheet" href="resources1/css/animate.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <style>
+    #popupDetailed-overlay {
+      position: fixed;
+      z-index: 9999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: none;
+    }
+
+    #popupDetailed-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 5px 20px -3px rgba(0, 0, 0, 0.16);
+      text-align: center;
+      min-width: 40%;
+    }
+
+    #popupDetailed-content {
+      margin-top: 20px;
+      color: #274472;
+      font-size: medium;
+      font-family: "Poppins", sans-serif;
+    }
+
+    #popupDetailed-close {
+      display: block;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      text-align: center;
+      background-color: #5885AF;
+      border-color: #5885AF;
+      border-radius: 62px;
+      color: #ffffff;
+      margin: 0 0 20px auto;
+    }
+
+    #popupDetailed-close:hover {
+      background-color: rgb(217, 7, 7);
+    }
+
+    @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap");
+
+    .popup {
+      background-color: #ffffff;
+      width: 450px;
+      padding: 0;
+      position: fixed;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: calc(50% + 40px);
+      height: 60%;
+      border-radius: 8px;
+      box-shadow: 0 5px 20px -3px rgba(0, 0, 0, 0.16);
+      font-family: "Poppins", sans-serif;
+      display: none;
+      text-align: center;
+      border: 1px solid #000;
+      z-index: 99 !important;
+    }
+
+    .notification-ui_dd-header {
+      border-bottom: 1px solid #ddd;
+      padding: 15px;
+    }
+
+    .notification-ui_dd-header h3 {
+      margin-bottom: 0;
+    }
+
+    .notification-ui_dd-content {
+      max-height: 85%;
+      overflow: auto;
+    }
+
+    .notification-list {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 25px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .notification-list--unread {
+      position: relative;
+      background: #f4f8fa;
+    }
+
+    .notification-list--unread:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: calc(100% + 1px);
+      border-left: 2px solid #007bff;
+    }
+
+    .notification-list .notification-list_detail {
+      margin-right: auto;
+      max-width: 200px;
+    }
+
+    .notification-list .notification-list_detail p {
+      margin-bottom: 5px;
+      line-height: 1.2;
+    }
+
+    .notification-list .notification-list_detail .nt-link {
+      border-left: 3px solid #007bff;
+      line-height: 1.3;
+      padding-left: 10px;
+    }
+
+    #close {
+      display: block;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      text-align: center;
+      background-color: #5885AF;
+      border-radius: 62px;
+      color: #ffffff;
+      margin: 0 0 20px auto;
+    }
+
+    #close:hover {
+      background-color: rgb(217, 7, 7);
+    }
+
+    html,
+    body,
+    #announcements {
+      background-color: #373737;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="padding: 0px 0px 0px 0px;">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="#" class="logo">
+              <img src="resources1/images/logo2.png" alt="" style="width: fit-content; height: fit-content;">
+              <img src="resources1/images/name2.png" alt=""
+                style="width: fit-content;  width: 150px; height: fit-content;">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+
+              <li><a href="loggedHome.html" class="active">Home</a></li>
+              <li><a onclick="history.back()" style="padding: 0%;">
+                <i class="fa fa-arrow-circle-left" id=profile style="color: aliceblue;"></i></a>
+            </li>
+              <li>
+                <div class="main-button">
+                  <a href="index.html" style="background-color: #eae6e6; color: #000000; 
+                text-align: center; padding: 10px 20px;">Log Out &#8680</a>
+                </div>
+              </li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+  <!-- ***** Main Banner Area Start ***** -->
+  <section id="section-1">
+    <div class="content-slider">
+      <input type="radio" id="banner1" class="sec-1-input" name="banner" checked>
+      <input type="radio" id="banner2" class="sec-1-input" name="banner">
+      <input type="radio" id="banner3" class="sec-1-input" name="banner">
+      <input type="radio" id="banner4" class="sec-1-input" name="banner">
+      <div class="slider">
+        <div id="top-banner-1" class="banner" style="background-image: url('Bill/image1.jpg');">
+          <div class="banner-inner-wrapper header-text">
+            <div class="main-caption">
+              <h2>Explore The Different Transfers that we offer</h2>
+              <h3>You can now pays your bills through your bank account</h3>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="more-info">
+                    <div class="row">
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <a id="services" href="billPayment.html">Bills</a>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <a id="services" href="creditCardPayment.html">Card-Payment</a>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <a id="services" href="Transfer.html">Transfers</a>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <a id="services" href="loansPayment.html">Loan-Payment</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="top-banner-2" class="banner"style="background-image: url('Bill/image2.jpg');">
+          <div class="banner-inner-wrapper header-text">
+            <div class="main-caption">
+              <h3>Transfer money either domestically or internationally</h3>
+            </div>
+            <div class="container">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="more-info">
+                      <div class="row">
+                        <div class="col-lg-3 col-sm-6 col-6">
+                          <a id="services" href="billPayment.html">Bills</a>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-6">
+                          <a id="services" href="creditCardPayment.html">Card-Payment</a>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-6">
+                          <a id="services" href="Transfer.html">Transfers</a>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-6">
+                          <a id="services" href="loansPayment.html">Loan-Payment</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div id="top-banner-3" class="banner" style="background-image: url('Bill/image3.jpg');">
+          <div class="banner-inner-wrapper header-text">
+            <div class="main-caption">
+              <h3>Pay you creditCard bill and never miss a deadline</h3>
+            </div>
+            <div class="container">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="more-info">
+                      <div class="row">
+                        <div class="col-lg-3 col-sm-6 col-6">
+                          <a id="services" href="billPayment.html">Bills</a>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-6">
+                          <a id="services" href="creditCardPayment.html">Card-Payment</a>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-6">
+                          <a id="services" href="Transfer.html">Transfers</a>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-6">
+                          <a id="services" href="loansPayment.html">Loan-Payment</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div id="top-banner-4" class="banner" style="background-image: url('Bill/image4.jpg');">
+          <div class="banner-inner-wrapper header-text">
+            <div class="main-caption">
+              <h3>Pay your loan installments on time and never miss a deadline</h3>
+            </div>
+            <div class="container">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="more-info">
+                      <div class="row">
+                        <div class="col-lg-3 col-sm-6 col-6">
+                          <a id="services" href="billPayment.html">Bills</a>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-6">
+                          <a id="services" href="creditCardPayment.html">Card-Payment</a>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-6">
+                          <a id="services" href="Transfer.html">Transfers</a>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-6">
+                          <a id="services" href="loansPayment.html">Loan-Payment</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="controls">
+          <label for="banner1"><span class="progressbar"><span class="progressbar-fill"></span></span><span
+              class="text"></span></label>
+          <label for="banner2"><span class="progressbar"><span class="progressbar-fill"></span></span><span
+              class="text"></span></label>
+          <label for="banner3"><span class="progressbar"><span class="progressbar-fill"></span></span><span
+              class="text"></span></label>
+          <label for="banner4"><span class="progressbar"><span class="progressbar-fill"></span></span><span
+              class="text"></span></label>
+        </div>
+      </nav>
+    </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+
+
+
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2023 <a href="#">Crédit Égide</a> Bank. All rights reserved.
+          </P>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="resources1/vendor/jquery/jquery.min.js"></script>
+  <script src="resources1/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="resources1/js/isotope.min.js"></script>
+  <script src="resources1/js/owl-carousel.js"></script>
+  <script src="resources1/js/wow.js"></script>
+  <script src="resources1/js/tabs.js"></script>
+  <script src="resources1/js/popup.js"></script>
+  <script src="resources1/js/custom.js"></script>
+
+  <script>
+    function bannerSwitcher() {
+      next = $('.sec-1-input').filter(':checked').next('.sec-1-input');
+      if (next.length) next.prop('checked', true);
+      else $('.sec-1-input').first().prop('checked', true);
+    }
+
+    var bannerTimer = setInterval(bannerSwitcher, 5000);
+
+    $('nav .controls label').click(function () {
+      clearInterval(bannerTimer);
+      bannerTimer = setInterval(bannerSwitcher, 5000)
+    });
+
+    document.querySelector("#close").addEventListener("click", function () {
+      document.querySelector(".popup").style.display = "none";
+    });
+    function termConditions() {
+      document.querySelector(".popup").style.display = "block";
+      var width = $(window).width();
+      if (width < 991) {
+        $('.menu-trigger').removeClass('active');
+        $('.header-area .nav').slideToggle(200);
+      }
+      $('html,body').animate({
+        scrollTop: (target.offset().top) - 80
+      }, 900);
+      return false;
+    }
+
+    
+  </script>
+
+</body>
+
+</html>
