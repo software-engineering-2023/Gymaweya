@@ -73,8 +73,7 @@
   </head>
 
 
-  <section>
-  <body style="margin-top:-3.5%">
+  <body>
 
     <header class="header-area header-sticky">
       <div class="container">
@@ -116,159 +115,161 @@
     </header>
    
 
-  <div class="content">
+    <div class="content">
     
-    <div class="container" id="reportcontainer">
-      <div class="row align-items-stretch justify-content-center no-gutters">
-        <div class="col-md-7">
-          <div class="form h-100 contact-wrap p-5">
-            <h3 class="text-center">Credit Card Payment</h3>
-            <form class="mb-5" method="post" id="contactForm" name="contactForm">
-              <div class="row">
-                <!--<div class="col-md-6 form-group mb-3">
-                  <label for="" class="col-form-label">Name *</label>
-                  <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
+      <div class="container" id="reportcontainer">
+        <div class="row align-items-stretch justify-content-center no-gutters">
+          <div class="col-md-7">
+            <div class="form h-100 contact-wrap p-5">
+              <h3 class="text-center">Credit Card Payment</h3>
+              <form class="mb-5" method="post" id="contactForm" name="contactForm">
+                <div class="row">
+                 
+                  <label for="cars">From account:</label>
+  
+                  <select name="account" id="acount">
+                    <option value="volvo">1234 1234 1234 1234</option>
+                    <option value="saab">5678 5678 5678 5678</option>
+                  </select>
+                  <br>
+               
+                  <label for="cars">Amount:</label>
+  
+                  <input type="number" name="amount" id="amount"   placeholder="Enter Amount">
+  
+                  <label>
+                    <input type="checkbox" id="partialCB" onclick="showMessage2()">
+                      I want to pay full Amount
+                  </label>
+                  <div id="form-message-warning mt-4"></div> 
+                  <div id="msg"  style="display: none;">
+                      <h12 style="color:rgb(255, 0, 0)">Please enter valid amount</h12>
+                  </div>
+    
                 </div>
-                <div class="col-md-6 form-group mb-3">
-                  <label for="" class="col-form-label">Email *</label>
-                  <input type="email" class="form-control" name="email" id="email"  placeholder="Your email">
-                </div>
-              </div>-->
-              <label for="cars">From account:</label>
-
-              <select name="account" id="acount">
-                <option value="volvo">1234 1234 1234 1234</option>
-                <option value="saab">5678 5678 5678 5678</option>
-              </select>
-              <br>
-              <label for="cars">To Credit Card:</label>
-
-              <select name="card" id="card">
-                <option value="volvo">1234 1234 1234 1234</option>
-                <option value="saab">5678 5678 5678 5678</option>
-              </select>
-              <th>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
-              <th>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
-              <th>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
-              <th>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
-              <th>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
-              <th>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
-              <th>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
-              <th>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
-              <th>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
-
-              <br><div class="col-md-6 form-group mb-3">
-                <input type="number" name="amount" id="amount" style="display:none;"  placeholder="Enter Amount">
-              </div>
-
-              <head>
+  
+                <th>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
+                <th>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
+                <th>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
+                <th>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
+                <th>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
+                <th>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
+                <th>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
+                <th>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
+                <th>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
+  
+                <br>
+                <label>
+                  <input type="checkbox" id="myCheckbox" onclick="showMessage()">
+                  Set Credit Card payment Reminder
+                </label>
                 
-                <script>
-                  function disableCheckbox(checkbox) {
-                    checkbox.disabled = true;
-                  }
-                </script>
-
-                <script>
-
-
-                  function showMessage() {
-                    var textElement = document.getElementById("myCheckbox");
-                    var messageElement = document.getElementById("message");
-                    var checkbox = document.getElementById("myCheckbox");
-              
-                    if (checkbox.checked) {
-                      messageElement.innerHTML = "Credit Card Payment reminder is Set!";
-                      disableCheckbox(myCheckbox);
-                    }
-                    else {
-                      messageElement.innerHTML = "";
-                    }
-                  }
-                </script>
                 <style>
                   .hidden {
                     display: none;
                   }
                 </style>
-
-               
-              </head>
-              <body>
-                <label>
-                  <input type="checkbox" id="myCheckbox" onclick="showMessage()">
-                  Set Credit Card payment Reminder
-                </label>
-              
-                <div id="message"></div>
-              </body>
-
-              <style>
-                body {
-                  background: url('resources1/images/banner-01.jpg') no-repeat center center;
-                    background-size: cover;
-                }
+                
+                <body>
+                  <div id="message"></div>
+                </body>
+  
+                <style>
+                  body {
+                    background: url('resources1/images/banner-01.jpg') no-repeat center center;
+                      background-size: cover;
+                  }
                 </style>
-              
-              <th>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
-
-              <div class="row justify-content-center">
-                <div class="col-md-5 form-group text-center">
-                    <a  class="btn-submit" style="color:white;" onclick= "clickDeal()"><h15>Submit</h15></a>
-
-                  
+                
+  
+                <div class="row justify-content-center">
+                  <div class="col-md-5 form-group text-center">
+                      <a  class="btn-submit" style="color:white;" onclick= "clickDeal()"><h15>Submit</h15></a>
+                  </div>
                 </div>
-              </div>
-            </form>
-
-            <div id="form-message-warning mt-4"></div> 
-            <div id="msg"  style="display: none;">
-                <h12 style="color:rgb(255, 0, 0)">Please enter valid amount</h12>
+              </form>
+  
             </div>
-
           </div>
         </div>
       </div>
-    </div>
-    <div class="container" hidden="hidden">
-        <h1>here</h1>
-    </div>
-
-  </div>
+      
   
-</section>
-
-    <!-- <script src="Reports/contact-form-20/js/jquery-3.3.1.min.js"></script>
-    <script src="Reports/contact-form-20/js/popper.min.js"></script>
-    <script src="Reports/contact-form-20/js/bootstrap.min.js"></script>
-    <script src="Reports/contact-form-20/js/jquery.validate.min.js"></script>
-    <script src="Reports/contact-form-20/js/main.js"></script> -->
-    <script>
-    
-
-        function clickDeal() {
-          var checkbox = document.getElementById('partialCB');
-            if( document.getElementById("amount").value>0 || checkbox.unchecked){
-                console.log("not empty");
-                location.href="submitReport.html";
-            }
-            else{
-                console.log("here");
-                document.getElementById("msg").style.display = "block";
-
-            }
-            console.log(document.getElementById("amount").value)
-        
-        //     // document.getElementById("main-button-deal3").remove();
-        //     // document.getElementById("main-button-deal4").remove();
-        //     // document.getElementById("main-button-deal5").remove();
-        //     // document.getElementById("main-button-deal6").remove();
-    
-        }
+    </div>
     
       
+  
+      <!-- <script src="Reports/contact-form-20/js/jquery-3.3.1.min.js"></script>
+      <script src="Reports/contact-form-20/js/popper.min.js"></script>
+      <script src="Reports/contact-form-20/js/bootstrap.min.js"></script>
+      <script src="Reports/contact-form-20/js/jquery.validate.min.js"></script>
+      <script src="Reports/contact-form-20/js/main.js"></script> -->
     
-      </script>
+  
+  
+  <script>
+      
+                    function disableCheckbox(checkbox) {
+                      checkbox.disabled = true;
+                    }
+                  
+  
+  
+                    function showMessage() {
+                      console.log("here");
+                      var textElement = document.getElementById("myCheckbox");
+                      var messageElement = document.getElementById("message");
+                      var checkbox = document.getElementById("myCheckbox");
+                
+                      if (checkbox.checked) {
+                        messageElement.innerHTML = "Credit Card Payment reminder is Set!";
+                        disableCheckbox(myCheckbox);
+                      }
+                      else {
+                        messageElement.innerHTML = "";
+                      }
+                    }
+                    
+                    function showMessage2(){
+                      var x = document.getElementById("amount");
+                      if (x.style.display === "none") {
+                          x.style.display = "block";
+                        } else {
+                          x.style.display = "none";
+  
+                        }
+  
+                    }
+                  
+  
+    function clickDeal() {
+     var checkbox = document.getElementById('partialCB');
+     console.log(checkbox.checked);
+     if(checkbox.checked)
+      location.href="submitReport.html";
+  
+        if( document.getElementById("amount").value>0){
+            console.log("not empty");
+           location.href="submitReport.html";
+          
+        }
+        else{
+            console.log("here");
+            document.getElementById("msg").style.display = "block";
+  
+        }
+        console.log(document.getElementById("amount").value);
+    
+    //     // document.getElementById("main-button-deal3").remove();
+    //     // document.getElementById("main-button-deal4").remove();
+    //     // document.getElementById("main-button-deal5").remove();
+    //     // document.getElementById("main-button-deal6").remove();
+  
+    }
+  
+  
+  
+  </script>
 
 <div class="more-info reservation-info call-to-action" id="contactUs">
   <div class="container">
