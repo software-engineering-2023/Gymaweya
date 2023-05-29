@@ -657,7 +657,7 @@ Header Style
 }
 
 .header-area.header-sticky {
-  min-height: 70px;
+  min-height: -webkit-fit-content;
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.35)!important;
 }
 
@@ -994,22 +994,11 @@ Banner Style
 }
 
 #section-1 .content-slider .slider #top-banner-4 {
-  background: url('../images/banner-04.jpg') no-repeat center center;
+  background: url('../images/loanApplication.jpg') no-repeat center center;
   background-size: cover;
 }
 
-#section-1 .content-slider .slider #top-banner-5 {
-  background: url('../images/banner-05.jpg') no-repeat center center;
-  background-size: cover;
-}
-#section-1 .content-slider .slider #top-banner-6 {
-  background:  url('../images/banner-06.jpg') no-repeat center center ;
-  background-size: cover;
-}
-#section-1 .content-slider .slider #top-banner-7 {
-  background:  url('../images/banner-07.jpg') no-repeat center center ;
-  background-size: cover;
-}
+
 #section-1 .content-slider nav {
   position: absolute;
   bottom: 30px;

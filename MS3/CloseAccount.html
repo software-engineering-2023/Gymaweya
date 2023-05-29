@@ -23,7 +23,14 @@
 
 	 
 
-	  
+	  <style>
+		#ignoreCSS {
+      all: unset;
+    }
+		        html,body, .content {
+      background-color: #373737;
+    }
+	  </style>
 	  
 </head>
 
@@ -47,26 +54,29 @@
 				<img src="CloseAccount/assets/images/name2.png" alt="" style="width: fit-content;  width: 150px; height: fit-content;">
 			  </a>
 			  <!-- ***** Logo End ***** -->
-			  <!-- ***** Menu Start ***** -->
-			  <ul class="nav">
-  
-				<li><a href="loggedHome.html" class="active">Home</a></li>
-				
-				<li><a href="index.html" id="ignoreCSS">
-				  <i class="fa fa-user" id=profile></i></a></li>
-			  
-				<li>
-				  <div class="main-button">
-					<a href="index.html" style="background-color: #eae6e6; color: #000000; 
-				  text-align: center; padding: 10px 20px;">Log Out &#8680</a>
-				  </div>
-	
-				</li>
-			  </ul>
-			  <a class='menu-trigger'>
-				<span>Menu</span>
-			  </a>
-			  <!-- ***** Menu End ***** -->
+	            <!-- ***** Menu Start ***** -->
+				<ul class="nav">
+
+					<li><a href="loggedHome.html">Home</a></li>
+					<li><a href="CloseAccount.html" class="active">Close An Account</a></li>
+					<li><a href="openAccount.html">Open New Account</a></li>
+					<li><a onclick="history.back()" style="padding: 0%;">
+						<i class="fa fa-arrow-circle-left" id=profile style="color: aliceblue;"></i></a>
+						</li>
+					<!-- <li><a oncli id="ignoreCSS">
+					  <i class="fa fa-arrow-alt-circle-left" id=profile></i></a></li>
+					-->
+					<li> 
+					  <div class="main-button">
+						<a href="index.html" style="background-color: #eae6e6; color: #000000; 
+					  text-align: center; padding: 10px 20px;">Log Out &#8680</a>
+					  </div>
+					</li>
+				  </ul>
+				  <a class='menu-trigger'>
+					<span>Menu</span>
+				  </a>
+				  <!-- ***** Menu End ***** -->
 			</nav>
 		  </div>
 		</div>
@@ -113,8 +123,7 @@
 
 						</form>
 					</div>
-					<div class="col-md-6 hidden-sm close-account 
-					">
+					<div class="col-md-6 hidden-sm close-account" style="margin-bottom: 200px ;">
 		
 					
 				</div>
@@ -123,7 +132,6 @@
 	<!-- /container -->
 </section>
 
-<section>
 <div class="more-info reservation-info call-to-action" id="contactUs">
     <div class="container">
       <div class="row">
@@ -152,10 +160,6 @@
       </div>
     </div>
   </div>
-
-      
- </section>
-    
 
 					<footer>
 						<div class="container">

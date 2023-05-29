@@ -994,22 +994,10 @@ Banner Style
 }
 
 #section-1 .content-slider .slider #top-banner-4 {
-  background: url('../images/banner-04.jpg') no-repeat center center;
+  background: url('../images/loanApplication.jpg') no-repeat center center;
   background-size: cover;
 }
 
-#section-1 .content-slider .slider #top-banner-5 {
-  background: url('../images/banner-05.jpg') no-repeat center center;
-  background-size: cover;
-}
-#section-1 .content-slider .slider #top-banner-6 {
-  background:  url('../images/banner-06.jpg') no-repeat center center ;
-  background-size: cover;
-}
-#section-1 .content-slider .slider #top-banner-7 {
-  background:  url('../images/banner-07.jpg') no-repeat center center ;
-  background-size: cover;
-}
 #section-1 .content-slider nav {
   position: absolute;
   bottom: 30px;
@@ -1020,7 +1008,8 @@ Banner Style
 
 #section-1 .content-slider nav .controls {
   display: flex;
-  width: 70%;
+  width: 50%;
+  left: 25%;
   margin: 0 auto;
   font-family: Montserrat, sans-serif;
   color: #fff;
