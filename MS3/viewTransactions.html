@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
-  <title>Creadit Cards</title>
+  <title>Account transactions</title>
 
   <!-- Bootstrap core CSS -->
   <link href="CreditCard&Loans/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -18,8 +18,12 @@
   <link rel="stylesheet" href="CreditCard&Loans/assets/css/fontawesome.css">
   <link rel="stylesheet" href="CreditCard&Loans/assets/css/creditcards.css">
   <link rel="stylesheet" href="CreditCard&Loans/assets/css/owl.css">
+  <link rel="stylesheet" href="CreditCard&Loans/assets/css/animate.css">
+  <link rel="stylesheet" href="CreditCard&Loans/assets/css/style.css">
   <link rel="stylesheet" href="CreditCard&Loans\assets\css\viewCredit.css">
 
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <style>
     #ignoreCSS {
       all: unset;
@@ -92,98 +96,108 @@
       </div>
     </div>
   </header>
-
   <section class="section-padding">
     <div class="container">
-      <div class="row">
+        <div class="row">
 
-        <div class="col-lg-12 col-12 text-center">
-          <h3 class="mb-4" style="color:white">My Credit Cards</h3>
+            <div class="col-lg-8 col-12 mt-3 mx-auto">
+                <div class="custom-block custom-block-topics-listing bg-white shadow-lg mb-5">
+                    <div class="d-flex">
+                        <div class="custom-block-topics-listing-info d-flex">
+                            <div>
+                                <h5 class="mb-2">Account number : </h5>
+                                <h6 class="mb-2">Account Type : </h6>
+                                <h7 class="mb-2">Balance : </h7><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+            </div>
         </div>
+    </section>
+  <div class="container">
+    <ul class="responsive-table">
+      <li class="table-header">
+        <div class="col col-1">Date</div>
+        <div class="col col-2">Type</div>
+        <div class="col col-3">Details</div>
+        <div class="col col-4">Amount(EGP)</div>
+        <div class="col col-5">Balance(EGP)</div>
 
-        <div class="col-lg-8 col-12 mt-3 mx-auto">
-          <div class="custom-block custom-block-topics-listing bg-white shadow-lg mb-5">
-            <div class="d-flex">
-              <div class="custom-block-topics-listing-info d-flex">
-                <div>
-                  <h5 class="mb-2">Account number : </h5>
-                  <h6 class="mb-2">Card number : </h6>
-                  <h7 class="mb-2">Balance : </h7><br>
-                  <h7 class="mb-2">Points : </h7><br>
+      </li>
+      <li class="table-row">
+        <div class="col col-1" data-label="date">4/1/2023</div>
+        <div class="col col-2" data-label="type">Automatic Payment</div>
+        <div class="col col-3" data-label="Details">To:American-Eagle</div>
+        <div class="col col-4" data-label="Amount">200</div>
+        <div class="col col-5" data-label="Amount">5288</div>
 
-                  <a href="viewCreditCardTransactions.html" class="btn custom-btn mt-3 mt-lg-4">View transactions</a>
-                  <a href="points.html" class="btn custom-btn mt-3 mt-lg-4">Redeem Points</a>
-                  <a href="creditCardPayment.html" class="btn custom-btn mt-3 mt-lg-4">Pay Card Bill</a>
-                  <a href="cardTheft.html" class="btn custom-btn mt-3 mt-lg-4">Report Card Issue</a>
-
-
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="custom-block custom-block-topics-listing bg-white shadow-lg mb-5">
-            <div class="d-flex">
-              <div class="custom-block-topics-listing-info d-flex">
-                <div>
-                  <h5 class="mb-2">Account number : </h5>
-                  <h6 class="mb-2">Card number : </h6>
-                  <h7 class="mb-2">Balance : </h7><br>
-                  <h7 class="mb-2">Points : </h7><br>
-
-                  <a href="viewCreditCardTransactions.html" class="btn custom-btn mt-3 mt-lg-4">View transactions</a>
-                  <a href="points.html" class="btn custom-btn mt-3 mt-lg-4">Redeem Points</a>
-                  <a href="creditCardPayment.html" class="btn custom-btn mt-3 mt-lg-4">Pay Card Bill</a>
-                  <a href="cardTheft.html" class="btn custom-btn mt-3 mt-lg-4">Report Card Issue</a>
-
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-12 col-12">
-            <nav aria-label="Page navigation example">
-              <ul class="pagination justify-content-center mb-0">
-                <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Previous">
+      </li>
+      <li class="table-row">
+        <div class="col col-1" data-label="date">3/1/2023</div>
+        <div class="col col-2" data-label="type">Automatic Payment</div>
+        <div class="col col-3" data-label="Details">To:American-Eagle</div>
+        <div class="col col-4" data-label="Amount">200</div>
+        <div class="col col-5" data-label="Amount">5088</div>
+      </li>
+      <li class="table-row">
+        <div class="col col-1" data-label="date">2/1/2023</div>
+        <div class="col col-2" data-label="type"> Transfer</div>
+        <div class="col col-3" data-label="Details">To:79-0009-099999999-09</div>
+        <div class="col col-4" data-label="Amount">200</div>
+        <div class="col col-5" data-label="Amount">4888</div>
+      </li>
+      <li class="table-row">
+        <div class="col col-1" data-label="date">1/1/2023</div>
+        <div class="col col-2" data-label="type"> Transfer</div>
+        <div class="col col-3" data-label="Details">To:79-0009-099999999-09</div>
+        <div class="col col-4" data-label="Amount">200</div>
+        <div class="col col-5" data-label="Amount">4688</div>
+      </li>
+    </ul>
+  </div>
+  <div class="col-lg-12 col-12">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center mb-0">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
                     <span aria-hidden="true">Prev</span>
-                  </a>
-                </li>
+                </a>
+            </li>
 
-                <li class="page-item active" aria-current="page">
-                  <a class="page-link" href="#">1</a>
-                </li>
-
-                <li class="page-item">
-                  <a class="page-link" href="#">2</a>
-                </li>
-
-                <li class="page-item">
-                  <a class="page-link" href="#">3</a>
-                </li>
-
-                <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Next">
+            <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">1</a>
+            </li>
+            
+            <li class="page-item">
+                <a class="page-link" href="#">2</a>
+            </li>
+            
+            <li class="page-item">
+                <a class="page-link" href="#">3</a>
+            </li>
+            
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
                     <span aria-hidden="true">Next</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
 
-        </div>
-      </div>
-  </section>
 
   <div class="call-to-action" id="openAccount">
     <div class="container">
       <div class="row">
+       
 
-
-
+          
+        </div>
       </div>
     </div>
-  </div>
   </div>
 
   <div class="more-info reservation-info call-to-action" id="contactUs">
@@ -226,17 +240,20 @@
       </div>
     </div>
   </footer>
-  <script src="CreditCard&Loans/vendor/jquery/jquery.min.js"></script>
-  <script src="CreditCard&Loans/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="CreditCard&Loans/vendor/jquery/jquery.min.js"></script>
+<script src="CreditCard&Loans/vendor/bootstrap/js/bootstrap.min.js"></script>
 
-  <script src="CreditCard&Loans/assets/js/isotope.min.js"></script>
-  <script src="CreditCard&Loans/assets/js/owl-carousel.js"></script>
-  <script src="CreditCard&Loans/assets/js/wow.js"></script>
-  <script src="CreditCard&Loans/assets/js/tabs.js"></script>
-  <script src="CreditCard&Loans/assets/js/popup.js"></script>
+<script src="CreditCard&Loans/assets/js/isotope.min.js"></script> 
+<script src="CreditCard&Loans/assets/js/owl-carousel.js"></script>
+<script src="CreditCard&Loans/assets/js/wow.js"></script>
+<script src="CreditCard&Loans/assets/js/tabs.js"></script>
+<script src="CreditCard&Loans/assets/js/popup.js"></script>
 
-  <script src="CreditCard&Loans/assets/js/custom.js"></script>
+<script src="CreditCard&Loans/assets/js/custom.js"></script>
 
 </body>
 
 </html>
+
+
+
