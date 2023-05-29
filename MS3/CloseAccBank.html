@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
-  <title>Loan Requests</title>
+  <title> close Account Requests</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -42,11 +42,11 @@
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
               <li><a href="banker.html" class="active">Home</a></li>
-      
-              <li><a href="ViewCreditCardREQ.html"class="active">Credit Card Requests</a></li>
-              <li><a href="ViewAccountREQ.html"class="active">New Account Requests</a></li>
-			  <li><a href="ViewCreditCardDisableREQ.html"class="active">Credit card Disable Requests</a></li>
-			  <li><a href="CloseAccBank.html"class="active">Close Account Requests</a></li>
+              <li><a href="ViewLoanREQ.html"class="active"> Loan Requests</a></li>
+              <li><a href="ViewCreditCardREQ.html"class="active"> Credit Card Requests</a></li>
+			  <li><a href="ViewCreditCardDisableREQ.html"class="active"> Credit card Disable Requests</a></li>
+              <li><a href="ViewAccountREQ.html"class="active"> new Accounts Requests</a></li>
+          
               <li>
                
               </li>
@@ -97,7 +97,6 @@
 					  </style>
 					
 					
-					
 				</div>
 			</div>
 
@@ -107,7 +106,7 @@
 						<table class="table table-responsive-xl">
 						  <thead>
 						    <tr>
-						    	<td><strong>Loan Request Status</strong></td>
+						    	<td><strong>Account Status</strong></td>
 								<td></td>
 								<td><strong>Request ID </strong></td>
 						    	<td><strong>Name</strong></td>
@@ -115,12 +114,13 @@
 						      <td><strong>Phome number</strong></td>
 							  <th></th>
 							  <td><strong>Address</strong></td>
-							  <td><strong>Loan type</strong></td>
+							  <td><strong>Account type</strong></td>
 							  <th></th>
-							  <td><strong>Desired loan amount</strong></td>
+							  <td><strong>Currency Type</strong></td>
 							  <th></th>
-							  <td><strong>Annual income</strong></td>
+							  <td><strong>Balance</strong></td>
 							  <td><strong>National ID</strong></td>
+                              <td><strong>Account Number</strong></td>
 							
 							  <th></th>
 							  
@@ -134,7 +134,8 @@
 							
 								<tr class="alert" role="alert">
 									<td class="status"><span class="waiting"id="myTd">pending</span></td>
-									<td><button id="myButton">approve</button>
+									
+									<td><button id="myButton">close</button>
 									<button id="myButton2">decline</button></td>
 
 									<script>
@@ -145,7 +146,7 @@
 										button.addEventListener("click", function() {
 										  // Define the desired behavior
 										  
-										  textElement.textContent="approved";
+										  textElement.textContent="Closed";
 										  textElement.classList.remove("waiting");
 										  textElement.classList.remove("DEC");
                                           textElement.classList.add("active");
@@ -169,6 +170,7 @@
 										});
 									  </script>
 
+                                  
 
 									<td>499978</td>
 									<td>Mark Otto</th>
@@ -176,19 +178,20 @@
 								  <td>0112188765</td>
 								  <th></th>
 								  <td> New Cairo</td>
-								  <td>Student Loan </td>
+								  <td>Savings Account </td>
 								  <th></th>
-								  <td>100000 EGP</td>
+								  <td>Egyptian Pound</td>
 								  <td></th>
 								  <td>3000 EGP</td>
 								  <td>113765899</td>
+                                  <td>111111111</td>
 								  <th></th>
 								 
 							
 								</tr>
 								<tr class="alert" role="alert">
 									<td class="status"><span class="waiting"id="myTd1">pending</span></td>
-									<td><button id="myButton3">approve</button>
+									<td><button id="myButton3">close</button>
 										<button id="myButton4">decline</button></td>
 	
 										<script>
@@ -199,7 +202,7 @@
 											button1.addEventListener("click", function() {
 											  // Define the desired behavior
 											  
-											  textElement1.textContent="approved";
+											  textElement1.textContent="closed";
 											  textElement1.classList.remove("waiting");
 											  textElement1.classList.remove("DEC");
 											  textElement1.classList.add("active");
@@ -233,12 +236,13 @@
 								  <td>011218888</td>
 								  <th></th>
 								  <td> sheikh zayed</td>
-								  <td>Mortgage Loan </td>
+								  <td>Checking Account </td>
 								  <th></th>
-								  <td>888888 EGP</td>
+								  <td>American Dollar</td>
 								  <td></th>
 								  <td>2000 EGP</td>
 								  <td>1137554899</td>
+                                  <td>111111111</td>
 								  <th></th>
 								 
 							
@@ -246,7 +250,7 @@
 
 								<tr class="alert" role="alert">
 									<td class="status"><span class="waiting"id="myTd2">pending</span></td>									
-									<td><button id="myButton5">approve</button>
+									<td><button id="myButton5">close</button>
 										<button id="myButton6">decline</button></td>
 	
 										<script>
@@ -257,7 +261,7 @@
 											button2.addEventListener("click", function() {
 											  // Define the desired behavior
 											  
-											  textElement2.textContent="approved";
+											  textElement2.textContent="closed";
 											  textElement2.classList.remove("waiting");
 											  textElement2.classList.remove("DEC");
 											  textElement2.classList.add("active");
@@ -288,12 +292,13 @@
 								  <td>0112556698</td>
 								  <th></th>
 								  <td> Nasr City</td>
-								  <td>Personal Loan </td>
+								  <td>Savings Account</td>
 								  <th></th>
-								  <td>900000 EGP</td>
+								  <td>EURO</td>
 								  <td></th>
 								  <td>7800 EGP</td>
 								  <td>112224899</td>
+                                  <td>111111111</td>
 								  <th></th>
 								 
 							
@@ -303,7 +308,7 @@
 
 								<tr class="alert" role="alert">
 									<td class="status"><span class="waiting"id="myTd3">pending</span></td>									
-									<td><button id="myButton7">approve</button>
+									<td><button id="myButton7">close</button>
 										<button id="myButton8">decline</button></td>
 	
 										<script>
@@ -314,7 +319,7 @@
 											button3.addEventListener("click", function() {
 											  // Define the desired behavior
 											  
-											  textElement3.textContent="approved";
+											  textElement3.textContent="closed";
 											  textElement3.classList.remove("waiting");
 											  textElement3.classList.remove("DEC");
 											  textElement3.classList.add("active");
@@ -345,12 +350,13 @@
 								  <td>0117778609</td>
 								  <th></th>
 								  <td> sherouk</td>
-								  <td>Car Loan </td>
+								  <td>Checking Account</td>
 								  <th></th>
-								  <td>6000000 EGP</td>
+								  <td>Egyptian pound</td>
 								  <td></th>
 								  <td>7450 EGP</td>
 								  <td>1144324899</td>
+                                  <td>111111111</td>
 								  <th></th>
 								 
 							
@@ -359,7 +365,7 @@
 
 								<tr class="alert" role="alert">
 									<td class="status"><span class="waiting"id="myTd4">pending</span></td>									
-									<td><button id="myButton9">approve</button>
+									<td><button id="myButton9">close</button>
 										<button id="myButton10">decline</button></td>
 	
 										<script>
@@ -370,7 +376,7 @@
 											button2.addEventListener("click", function() {
 											  // Define the desired behavior
 											  
-											  textElement4.textContent="approved";
+											  textElement4.textContent="closed";
 											  textElement4.classList.remove("waiting");
 											  textElement4.classList.remove("DEC");
 											  textElement4.classList.add("active");
@@ -401,12 +407,13 @@
 								  <td>010998765</td>
 								  <th></th>
 								  <td> Maadi</td>
-								  <td>Student Loan </td>
+								  <td>Savings Account</td>
 								  <th></th>
-								  <td>278900 EGP</td>
+								  <td>Euro</td>
 								  <td></th>
 								  <td>1000 EGP</td>
 								  <td>98857425</td>
+                                  <td>111111111</td>
 								  <th></th>
 								 
 							

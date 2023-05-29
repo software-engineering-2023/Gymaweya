@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
-  <title>Creadit Cards</title>
+  <title>Loans</title>
 
   <!-- Bootstrap core CSS -->
   <link href="CreditCard&Loans/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -44,20 +44,19 @@
         <div class="col-12" style="padding: 0px 0px 0px 0px;">
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
-            <a href="index.html" class="logo">
-              <img src="CreditCard&Loans/assets/images/logo2.png" alt="" style="width: fit-content; height: fit-content;">
-              <img src="CreditCard&Loans/assets/images/name2.png" alt="" style="width: fit-content;  width: 150px; height: fit-content;">
+            <a href="#" class="logo">
+              <img src="resources1/images/logo2.png" alt="" style="width: fit-content; height: fit-content;">
+              <img src="resources1/images/name2.png" alt="" style="width: fit-content;  width: 150px; height: fit-content;">
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
 
-              <li><a href="loggedHome.html" class="active">Home</a></li>
-              <li><a href="#announcements">Announcements</a></li>
-              <li><a href="index.html" id="ignoreCSS">
-                <i class="fa fa-envelope" id=profile></i></a></li>
+              <li><a href="loggedHome.html" class="active" style="font-size: 20px; " >Home</a></li>
+              <!-- <li><a href="#announcements">Announcements</a></li> -->
+            
               <li>
-                <a href="index.html" id="ignoreCSS">
+                <a href="accountManager.html" id="ignorePadding">
                   <i class="fa fa-user" id=profile></i></a>
               </li>
               <li>
@@ -103,7 +102,7 @@
                   <div class="more-info">
                     <div class="row">
                       <div class="col-lg-3 col-sm-6 col-6">
-                        <a id="services" href="about.html">Apply for a Loan</a>
+                        <a id="services" href="applyLoan.html">Apply for a Loan</a>
                       </div>
                     </div>
                   </div>
@@ -134,7 +133,7 @@
                   <div class="more-info">
                     <div class="row">
                       <div class="col-lg-3 col-sm-6 col-6">
-                        <a id="services" href="about.html">Apply for a Loan</a>
+                        <a id="services" href="applyLoan.html">Apply for a Loan</a>
                       </div>
                     </div>
                   </div>
@@ -155,10 +154,14 @@
       </nav>
     </div>
   </section>
+
   <div class="call-to-action" id="openAccount">
     <div class="container">
       <div class="row">
+        <div class="col-lg-8">
         
+        </div>
+       
       </div>
     </div>
   </div>
@@ -196,8 +199,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <p>Copyright © 2023 <a href="#">Crédit Égide</a> Bank. All rights reserved. <br>
-            <a href="#contactUs">Contact US</a>
+          <p>Copyright © 2023 <a href="#">Crédit Égide</a> Bank. All rights reserved.
           </P>
         </div>
       </div>
@@ -227,6 +229,8 @@
     clearInterval(bannerTimer);
     bannerTimer = setInterval(bannerSwitcher, 5000)
   });
+
+  
 </script>
 </body>
 
