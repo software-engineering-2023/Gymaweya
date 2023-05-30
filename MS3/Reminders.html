@@ -27,6 +27,21 @@ TemplateMo 580 Woox Travel
 https://templatemo.com/tm-580-woox-travel
 
 -->
+<style>
+  #ignoreCSS {
+    all: unset;
+  }
+
+  html,
+  body,
+  .content {
+    background-color: #373737;
+  }
+
+  #ignorePadding {
+    padding: 0;
+  }
+</style>
 </head>
 
 <body>
@@ -58,14 +73,19 @@ https://templatemo.com/tm-580-woox-travel
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
-              <li><a onclick="history.back()" id="ignorePadding">
-                  <i class="fa fa-home" id=profile></i></a>
+
+              <li><a href="loggedHome.html" style="font-size: 20px; ">Home</a></li>
+              <!-- <li><a href="#announcements">Announcements</a></li> -->
+
+              <li><a onclick="history.back()" style="padding: 0%;">
+                  <i class="fa fa-arrow-circle-left" id=profile style="color: aliceblue;"></i></a>
               </li>
-              <!-- <li><a href="index.html" id="ignorePadding">
-                  <i class="fa fa-bell" id=profile></i></a></li> -->
-              <!-- <li><a href="index.html" id="ignorePadding">
-                  <i class="fa fa-user" id=profile></i></a>
-              </li> -->
+              <li>
+                <div class="main-button">
+                  <a href="index.html" style="background-color: #eae6e6; color: #000000; 
+                text-align: center; padding: 10px 20px;">Log Out &#8680</a>
+                </div>
+              </li>
             </ul>
             <a class='menu-trigger'>
               <span>Menu</span>
@@ -200,7 +220,7 @@ https://templatemo.com/tm-580-woox-travel
           return;
         }
       });
-      if (allitems && !alert("Form Submitted SuccessfullyPage will reload")) { window.location.reload(); }
+      if (allitems && !alert("Form Submitted Successfully Page will reload")) { window.location.reload(); }
       else
         alert("fill all the fields");
     }
