@@ -21,7 +21,8 @@ The online banking website frontend prototype has several components that work t
 ## Access
 -after visiting website home page and clicking login
 -user can use admin as username to review admin interface 
--same for banker and client interfaces
+-banker for banker interface 
+-client for client interface
 
 ## Conclusion
 
